@@ -1,0 +1,12 @@
+#!/usr/bin/ruby
+
+require 'thor'
+
+require_relative 'lib/command/main'
+
+# Command Line User Interface
+class Quizz < Thor
+  map ['h', '-h', '--help'] => 'help'
+end
+
+Quizz.start(ARGV)
