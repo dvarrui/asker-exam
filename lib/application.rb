@@ -6,8 +6,7 @@ require 'singleton'
 class Application
   include Singleton
 
-  attr_reader :config
-  attr_reader :name, :version, :default
+  attr_reader :name, :version, :params
 
   def initialize
     reset
@@ -19,5 +18,12 @@ class Application
     @default = { questions_number: 10,
                  exams_number: 1,
                  exams_format: :txt}
+    @params = {}
+  end
+
+  def get(key)
+    return @params[key] if @params[key]
+
+    @default[key]
   end
 end
