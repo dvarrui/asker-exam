@@ -1,0 +1,1444 @@
+---
+- :comment: ''
+  :name: tallo del mango-6-b1match4x4-$atributo$valor
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSAnrAszb1Z9tE46Nz5KeNQxfV7ehLsO_A8BogVdTQG2BUiWY-P3tgfvkU"
+    alt\="image"><br/>En relación al concepto <b>tallo del mango</b>, asocia cada
+    "Atributo" con su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &1
+  - - duración
+    - perenne
+  - - situación
+    - simpódico
+  - - consistencia
+    - leñoso
+  - - nombre científico
+    - Manguífera índica
+  :matching: *1
+- :comment: ''
+  :name: tallo del mango-7-b1match3x1misspelled-$atributo$valor
+  :text: En relación al concepto <b>tallo del mango</b>, asocia cada "Atributo" con
+    su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &2
+  - - consistencia
+    - leñoso
+  - - nombre científico
+    - Manguífera índica
+  - - duración
+    - perenne
+  - - situasión
+    - Error ortográfico
+  :matching: *2
+- :comment: ''
+  :name: tallo del mango-8-b1match4x4-$atributo$valor
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTXtScIsGljryCqEgy6uPmdumrK0hrf737AAfC205cQo9icDsSFF1eNb-Kd"
+    alt\="image"><br/>En relación al concepto <b>tallo del mango</b>, asocia cada
+    "Atributo" con su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &3
+  - - situación
+    - simpódico
+  - - nombre científico
+    - Manguífera índica
+  - - nombre común
+    - Mango
+  - - duración
+    - perenne
+  :matching: *3
+- :comment: ''
+  :name: tallo del mango-9-b1match3x1misspelled-$atributo$valor
+  :text: En relación al concepto <b>tallo del mango</b>, asocia cada "Atributo" con
+    su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &4
+  - - nombre científico
+    - Manguífera índica
+  - - nombre común
+    - Mango
+  - - situación
+    - simpódico
+  - - duracióñ
+    - Error ortográfico
+  :matching: *4
+- :comment: ''
+  :name: tallo del mango-10-b1match3x1-$atributo$valor
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcT36123v6Bw5lYHCrN7oWlN8XCU56oVLTwiNaOLLX03bg8Saa3pwZJu1Fvk"
+    alt\="image"><br/>En relación al concepto <b>tallo del mango</b>, asocia cada
+    "Atributo" con su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &5
+  - - consistencia
+    - leñoso
+  - - duración
+    - perenne
+  - - situación
+    - simpódico
+  - - consistencia
+    - Error
+  :matching: *5
+- :comment: ''
+  :name: tallo del mango-1-i1choice
+  :text: <img src\="http://2.bp.blogspot.com/_eTDqr8nggFk/TMd0vIKqMYI/AAAAAAAAABU/59mXRgQ3K0o/s1600/mango.jpg"
+    alt\\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
+    con la imagen anterior.<br/>
+  :type: :choice
+  :feedback: ''
+  :answer: tallo del mango
+  :options:
+  - tallo de la espina de cristo
+  - tallo del mango
+  - Ninguna es correcta
+  - tallo del aguacate
+- :comment: ''
+  :name: tallo del mango-2-i1misspelling
+  :text: <img src\="http://2.bp.blogspot.com/_eTDqr8nggFk/TMd0vIKqMYI/AAAAAAAAABU/59mXRgQ3K0o/s1600/mango.jpg"
+    alt\\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
+    con la imagen anterior.<br/>
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - tallo del aguacate
+  - Ninguna es correcta
+  - tallo de la espina de cristo
+  - tarlo del mango
+- :comment: ''
+  :name: tallo del mango-3-i2true
+  :text: <img src\="http://2.bp.blogspot.com/_eTDqr8nggFk/TMd0vIKqMYI/AAAAAAAAABU/59mXRgQ3K0o/s1600/mango.jpg"
+    alt\\="image" width\="400" height\="300"><br/>La imagen anterior corresponde a
+    <b>tallo del mango</b>.
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del mango-4-i2false
+  :text: <img src\="http://2.bp.blogspot.com/_eTDqr8nggFk/TMd0vIKqMYI/AAAAAAAAABU/59mXRgQ3K0o/s1600/mango.jpg"
+    alt\\="image" width\="400" height\="300"><br/>La imagen anterior corresponde a
+    <b>tallo del aguacate</b>.
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-5-i3short
+  :text: <img src\="http://2.bp.blogspot.com/_eTDqr8nggFk/TMd0vIKqMYI/AAAAAAAAABU/59mXRgQ3K0o/s1600/mango.jpg"
+    alt\\="image" width\="400" height\="300"><br/>Escribe la opción ????? ??? ?????,
+    que mejor corresponda con la imagen anterior.<br/>
+  :type: :short
+  :feedback: ''
+  :answer:
+  - tallo del mango
+- :comment: ''
+  :name: tallo del mango-11-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: [*]<br/>Valor\: "leñoso"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: consistencia
+  :options:
+  - consistencia
+  - situación
+  - duración
+  - Ninguna es correcta
+- :comment: ''
+  :name: tallo del mango-12-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: [*]<br/>Valor\: "leñoso"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - duración
+  - situación
+  - nombre común
+  - Ninguna es correcta
+- :comment: ''
+  :name: tallo del mango-13-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: "consistencia"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: leñoso
+  :options:
+  - herbacea
+  - Ninguna es correcta
+  - suculenta
+  - leñoso
+- :comment: ''
+  :name: tallo del mango-14-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: "consistencia"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - perenne
+  - herbacea
+  - Ninguna es correcta
+  - suculenta
+- :comment: ''
+  :name: tallo del mango-15t5table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "consistencia"</li><li>Valor\: "leñoso"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del mango-16-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "consistencia"</li><li>Valor\: "herbacea"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-17t7table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "situación"</li><li>Valor\: "leñoso"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-18t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "leñoso"</li><li>Atributo\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - consistencia
+- :comment: ''
+  :name: tallo del mango-19t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "consistencia"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - leñoso
+- :comment: ''
+  :name: tallo del mango-20-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: [*]<br/>Valor\: "perenne"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: duración
+  :options:
+  - situación
+  - Ninguna es correcta
+  - duración
+  - consistencia
+- :comment: ''
+  :name: tallo del mango-21-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: [*]<br/>Valor\: "perenne"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - consistencia
+  - situación
+  - nombre científico
+- :comment: ''
+  :name: tallo del mango-22-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: "duración"<br/>Valor: [*]<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: perenne
+  :options:
+  - perenne
+  - leñoso
+  - simpódico
+  - Ninguna es correcta
+- :comment: ''
+  :name: tallo del mango-23-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: "duración"<br/>Valor: [*]<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - simpódico
+  - Manguífera índica
+  - Ninguna es correcta
+  - leñoso
+- :comment: ''
+  :name: tallo del mango-24t5table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "duración"</li><li>Valor\: "perenne"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del mango-25-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "duración"</li><li>Valor\: "leñoso"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-26t7table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "consistencia"</li><li>Valor\: "perenne"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-27t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "perenne"</li><li>Atributo\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - duración
+- :comment: ''
+  :name: tallo del mango-28t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "duración"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - perenne
+- :comment: ''
+  :name: tallo del mango-29-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: [*]<br/>Valor\: "simpódico"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: situación
+  :options:
+  - Ninguna es correcta
+  - consistencia
+  - situación
+  - duración
+- :comment: ''
+  :name: tallo del mango-30-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: [*]<br/>Valor\: "simpódico"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - consistencia
+  - nombre común
+  - duración
+- :comment: ''
+  :name: tallo del mango-31-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: "situación"<br/>Valor: [*]<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: simpódico
+  :options:
+  - Ninguna es correcta
+  - simpódico
+  - perenne
+  - suculenta
+- :comment: ''
+  :name: tallo del mango-32-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: "situación"<br/>Valor: [*]<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - suculenta
+  - Ninguna es correcta
+  - perenne
+  - leñoso
+- :comment: ''
+  :name: tallo del mango-33t5table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "situación"</li><li>Valor\: "simpódico"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del mango-34-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "situación"</li><li>Valor\: "suculenta"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-35t7table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "duración"</li><li>Valor\: "simpódico"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-36t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "simpódico"</li><li>Atributo\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - situación
+- :comment: ''
+  :name: tallo del mango-37t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "situación"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - simpódico
+- :comment: ''
+  :name: tallo del mango-38-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: [*]<br/>Valor\: "Manguífera
+    índica"<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: nombre científico
+  :options:
+  - nombre científico
+  - nombre común
+  - Ninguna es correcta
+  - situación
+- :comment: ''
+  :name: tallo del mango-39-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: [*]<br/>Valor\: "Manguífera
+    índica"<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - duración
+  - situación
+  - nombre común
+- :comment: ''
+  :name: tallo del mango-40-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: "nombre científico"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Manguífera índica
+  :options:
+  - Manguífera índica
+  - Ninguna es correcta
+  - Persea americana
+  - Mango
+- :comment: ''
+  :name: tallo del mango-41-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: "nombre científico"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - Aguacate
+  - Mango
+  - Persea americana
+- :comment: ''
+  :name: tallo del mango-42t5table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre científico"</li><li>Valor\: "Manguífera índica"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del mango-43-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre científico"</li><li>Valor\: "Persea americana"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-44t7table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre común"</li><li>Valor\: "Manguífera índica"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-45t9table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "Manguífera índica"</li><li>Atributo\: [?????? ??????????]</li></ul>Escribir 2
+    palabras.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - nombre científico
+- :comment: ''
+  :name: tallo del mango-46t9table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "nombre científico"</li><li>Valor\: [?????????? ??????]</li></ul>Escribir 2 palabras.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - Manguífera índica
+- :comment: ''
+  :name: tallo del mango-47-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: [*]<br/>Valor\: "Mango"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: nombre común
+  :options:
+  - Ninguna es correcta
+  - situación
+  - nombre científico
+  - nombre común
+- :comment: ''
+  :name: tallo del mango-48-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: [*]<br/>Valor\: "Mango"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - duración
+  - situación
+  - Ninguna es correcta
+  - nombre científico
+- :comment: ''
+  :name: tallo del mango-49-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: "nombre común"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Mango
+  :options:
+  - Ninguna es correcta
+  - Mango
+  - Manguífera índica
+  - Aguacate
+- :comment: ''
+  :name: tallo del mango-50-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Atributo\: "nombre común"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Manguífera índica
+  - Persea americana
+  - Aguacate
+  - Ninguna es correcta
+- :comment: ''
+  :name: tallo del mango-51t5table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre común"</li><li>Valor\: "Mango"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del mango-52-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre común"</li><li>Valor\: "Aguacate"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-53t7table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre científico"</li><li>Valor\: "Mango"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del mango-54t9table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "Mango"</li><li>Atributo\: [?????? ?????]</li></ul>Escribir 2 palabras.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - nombre común
+- :comment: ''
+  :name: tallo del mango-55t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del mango</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "nombre común"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - Mango
+- :comment: ''
+  :name: tallo de la espina de cristo-6-b1match3x1-$atributo$valor
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSAnrAszb1Z9tE46Nz5KeNQxfV7ehLsO_A8BogVdTQG2BUiWY-P3tgfvkU"
+    alt\="image"><br/>En relación al concepto <b>tallo de la espina de cristo</b>,
+    asocia cada "Atributo" con su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &6
+  - - consistencia
+    - herbacea
+  - - duración
+    - perenne
+  - - situación
+    - suculenta
+  - - consistencia
+    - Error
+  :matching: *6
+- :comment: ''
+  :name: tallo de la espina de cristo-1-i1choice
+  :text: <img src\="http://subirimagen.infojardin.com/subida-foto/images/arx1303678821w.JPG"
+    alt\\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
+    con la imagen anterior.<br/>
+  :type: :choice
+  :feedback: ''
+  :answer: tallo de la espina de cristo
+  :options:
+  - tallo del aguacate
+  - tallo del mango
+  - Ninguna es correcta
+  - tallo de la espina de cristo
+- :comment: ''
+  :name: tallo de la espina de cristo-2-i1misspelling
+  :text: <img src\="http://subirimagen.infojardin.com/subida-foto/images/arx1303678821w.JPG"
+    alt\\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
+    con la imagen anterior.<br/>
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - tallo del mango
+  - Ninguna es correcta
+  - tarlo de la espina de cristo
+  - tallo del aguacate
+- :comment: ''
+  :name: tallo de la espina de cristo-3-i2true
+  :text: <img src\="http://subirimagen.infojardin.com/subida-foto/images/arx1303678821w.JPG"
+    alt\\="image" width\="400" height\="300"><br/>La imagen anterior corresponde a
+    <b>tallo de la espina de cristo</b>.
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo de la espina de cristo-4-i2false
+  :text: <img src\="http://subirimagen.infojardin.com/subida-foto/images/arx1303678821w.JPG"
+    alt\\="image" width\="400" height\="300"><br/>La imagen anterior corresponde a
+    <b>tallo del aguacate</b>.
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo de la espina de cristo-5-i3short
+  :text: <img src\="http://subirimagen.infojardin.com/subida-foto/images/arx1303678821w.JPG"
+    alt\\="image" width\="400" height\="300"><br/>Escribe la opción ????? ?? ?? ??????
+    ?? ??????, que mejor corresponda con la imagen anterior.<br/>
+  :type: :short
+  :feedback: ''
+  :answer:
+  - tallo de la espina de cristo
+- :comment: ''
+  :name: tallo de la espina de cristo-7-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: [*]<br/>Valor\:
+    "herbacea"<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: consistencia
+  :options:
+  - nombre científico
+  - nombre común
+  - consistencia
+  - Ninguna es correcta
+- :comment: ''
+  :name: tallo de la espina de cristo-8-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: [*]<br/>Valor\:
+    "herbacea"<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - nombre científico
+  - nombre común
+  - Ninguna es correcta
+  - situación
+- :comment: ''
+  :name: tallo de la espina de cristo-9-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: "consistencia"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: herbacea
+  :options:
+  - herbacea
+  - Ninguna es correcta
+  - leñoso
+  - Mango
+- :comment: ''
+  :name: tallo de la espina de cristo-10-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: "consistencia"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - leñoso
+  - Mango
+  - Manguífera índica
+  - Ninguna es correcta
+- :comment: ''
+  :name: tallo de la espina de cristo-11t5table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>La asociación siguiente
+    es correcta\:<br/><ul><li>Atributo\: "consistencia"</li><li>Valor\: "herbacea"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo de la espina de cristo-12-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>La asociación siguiente
+    es correcta\:<br/><ul><li>Atributo\: "consistencia"</li><li>Valor\: "leñoso"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo de la espina de cristo-13t7table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>La asociación siguiente
+    es correcta\:<br/><ul><li>Atributo\: "nombre común"</li><li>Valor\: "herbacea"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo de la espina de cristo-14t8table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "herbacea"</li><li>Atributo\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - consistencia
+- :comment: ''
+  :name: tallo de la espina de cristo-15t8table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "consistencia"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - herbacea
+- :comment: ''
+  :name: tallo de la espina de cristo-16-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: [*]<br/>Valor\:
+    "perenne"<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: duración
+  :options:
+  - consistencia
+  - duración
+  - Ninguna es correcta
+  - situación
+- :comment: ''
+  :name: tallo de la espina de cristo-17-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: [*]<br/>Valor\:
+    "perenne"<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - consistencia
+  - nombre científico
+  - situación
+  - Ninguna es correcta
+- :comment: ''
+  :name: tallo de la espina de cristo-18-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: "duración"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: perenne
+  :options:
+  - Ninguna es correcta
+  - perenne
+  - herbacea
+  - suculenta
+- :comment: ''
+  :name: tallo de la espina de cristo-19-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: "duración"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - suculenta
+  - Ninguna es correcta
+  - herbacea
+  - simpódico
+- :comment: ''
+  :name: tallo de la espina de cristo-20t5table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>La asociación siguiente
+    es correcta\:<br/><ul><li>Atributo\: "duración"</li><li>Valor\: "perenne"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo de la espina de cristo-21-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>La asociación siguiente
+    es correcta\:<br/><ul><li>Atributo\: "duración"</li><li>Valor\: "herbacea"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo de la espina de cristo-22t7table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>La asociación siguiente
+    es correcta\:<br/><ul><li>Atributo\: "consistencia"</li><li>Valor\: "perenne"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo de la espina de cristo-23t8table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "perenne"</li><li>Atributo\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - duración
+- :comment: ''
+  :name: tallo de la espina de cristo-24t8table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "duración"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - perenne
+- :comment: ''
+  :name: tallo de la espina de cristo-25-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: [*]<br/>Valor\:
+    "suculenta"<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: situación
+  :options:
+  - duración
+  - situación
+  - Ninguna es correcta
+  - consistencia
+- :comment: ''
+  :name: tallo de la espina de cristo-26-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: [*]<br/>Valor\:
+    "suculenta"<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - nombre común
+  - Ninguna es correcta
+  - consistencia
+  - duración
+- :comment: ''
+  :name: tallo de la espina de cristo-27-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: "situación"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: suculenta
+  :options:
+  - suculenta
+  - simpódico
+  - perenne
+  - Ninguna es correcta
+- :comment: ''
+  :name: tallo de la espina de cristo-28-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Atributo\: "situación"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - leñoso
+  - simpódico
+  - Ninguna es correcta
+  - perenne
+- :comment: ''
+  :name: tallo de la espina de cristo-29t5table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>La asociación siguiente
+    es correcta\:<br/><ul><li>Atributo\: "situación"</li><li>Valor\: "suculenta"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo de la espina de cristo-30-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>La asociación siguiente
+    es correcta\:<br/><ul><li>Atributo\: "situación"</li><li>Valor\: "simpódico"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo de la espina de cristo-31t7table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>La asociación siguiente
+    es correcta\:<br/><ul><li>Atributo\: "duración"</li><li>Valor\: "suculenta"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo de la espina de cristo-32t8table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "suculenta"</li><li>Atributo\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - situación
+- :comment: ''
+  :name: tallo de la espina de cristo-33t8table-$atributo$valor
+  :text: 'Concepto <b>tallo de la espina de cristo</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "situación"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - suculenta
+- :comment: ''
+  :name: tallo del aguacate-6-b1match4x4-$atributo$valor
+  :text: En relación al concepto <b>tallo del aguacate</b>, asocia cada "Atributo"
+    con su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &7
+  - - duración
+    - perenne
+  - - consistencia
+    - leñoso
+  - - nombre científico
+    - Persea americana
+  - - situación
+    - simpódico
+  :matching: *7
+- :comment: ''
+  :name: tallo del aguacate-7-b1match3x1misspelled-$atributo$valor
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQN8MovDIz-2zVwaGMyPCIswKHKk-kPyBU2B00L6KWzX0ucHIWt0ZlJwjc"
+    alt\="image"><br/>En relación al concepto <b>tallo del aguacate</b>, asocia cada
+    "Atributo" con su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &8
+  - - nombre científico
+    - Persea americana
+  - - duración
+    - perenne
+  - - consistencia
+    - leñoso
+  - - situacion
+    - Error ortográfico
+  :matching: *8
+- :comment: ''
+  :name: tallo del aguacate-8-b1match4x4-$atributo$valor
+  :text: En relación al concepto <b>tallo del aguacate</b>, asocia cada "Atributo"
+    con su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &9
+  - - situación
+    - simpódico
+  - - nombre científico
+    - Persea americana
+  - - duración
+    - perenne
+  - - nombre común
+    - Aguacate
+  :matching: *9
+- :comment: ''
+  :name: tallo del aguacate-9-b1match3x1misspelled-$atributo$valor
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQorptu7yJP8AexRQuxImRS1CF9T8w8kXiJY8oTjMnXdJm_P5vyFNbIxyM"
+    alt\="image"><br/>En relación al concepto <b>tallo del aguacate</b>, asocia cada
+    "Atributo" con su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &10
+  - - situación
+    - simpódico
+  - - duración
+    - perenne
+  - - nombre científico
+    - Persea americana
+  - - nombre komún
+    - Error ortográfico
+  :matching: *10
+- :comment: ''
+  :name: tallo del aguacate-10-b1match3x1-$atributo$valor
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTL7FElxh0MSQA-VuBsGcU3gzgfQX3sO9C3Ax02nEKdtEO1eK2gMzH_Mg4"
+    alt\="image"><br/>En relación al concepto <b>tallo del aguacate</b>, asocia cada
+    "Atributo" con su "Valor".<br/>
+  :type: :match
+  :feedback: ''
+  :answer: &11
+  - - consistencia
+    - leñoso
+  - - duración
+    - perenne
+  - - situación
+    - simpódico
+  - - consistencia
+    - Error
+  :matching: *11
+- :comment: ''
+  :name: tallo del aguacate-1-i1choice
+  :text: <img src\="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Avocado_Tree_%282473587957%29.jpg/640px-Avocado_Tree_%282473587957%29.jpg"
+    alt\\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
+    con la imagen anterior.<br/>
+  :type: :choice
+  :feedback: ''
+  :answer: tallo del aguacate
+  :options:
+  - tallo del mango
+  - tallo de la espina de cristo
+  - Ninguna es correcta
+  - tallo del aguacate
+- :comment: ''
+  :name: tallo del aguacate-2-i1misspelling
+  :text: <img src\="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Avocado_Tree_%282473587957%29.jpg/640px-Avocado_Tree_%282473587957%29.jpg"
+    alt\\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
+    con la imagen anterior.<br/>
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - tallo de la espina de cristo
+  - tallos del aguacate
+  - tallo del mango
+- :comment: ''
+  :name: tallo del aguacate-3-i2true
+  :text: <img src\="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Avocado_Tree_%282473587957%29.jpg/640px-Avocado_Tree_%282473587957%29.jpg"
+    alt\\="image" width\="400" height\="300"><br/>La imagen anterior corresponde a
+    <b>tallo del aguacate</b>.
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del aguacate-4-i2false
+  :text: <img src\="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Avocado_Tree_%282473587957%29.jpg/640px-Avocado_Tree_%282473587957%29.jpg"
+    alt\\="image" width\="400" height\="300"><br/>La imagen anterior corresponde a
+    <b>tallo del mango</b>.
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-5-i3short
+  :text: <img src\="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Avocado_Tree_%282473587957%29.jpg/640px-Avocado_Tree_%282473587957%29.jpg"
+    alt\\="image" width\="400" height\="300"><br/>Escribe la opción ????? ??? ????????,
+    que mejor corresponda con la imagen anterior.<br/>
+  :type: :short
+  :feedback: ''
+  :answer:
+  - tallo del aguacate
+- :comment: ''
+  :name: tallo del aguacate-11-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: [*]<br/>Valor\: "leñoso"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: consistencia
+  :options:
+  - duración
+  - Ninguna es correcta
+  - situación
+  - consistencia
+- :comment: ''
+  :name: tallo del aguacate-12-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: [*]<br/>Valor\: "leñoso"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - duración
+  - nombre común
+  - Ninguna es correcta
+  - situación
+- :comment: ''
+  :name: tallo del aguacate-13-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: "consistencia"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: leñoso
+  :options:
+  - leñoso
+  - herbacea
+  - Ninguna es correcta
+  - suculenta
+- :comment: ''
+  :name: tallo del aguacate-14-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: "consistencia"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - suculenta
+  - Ninguna es correcta
+  - herbacea
+  - perenne
+- :comment: ''
+  :name: tallo del aguacate-15t5table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "consistencia"</li><li>Valor\: "leñoso"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del aguacate-16-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "consistencia"</li><li>Valor\: "herbacea"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-17t7table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "situación"</li><li>Valor\: "leñoso"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-18t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "leñoso"</li><li>Atributo\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - consistencia
+- :comment: ''
+  :name: tallo del aguacate-19t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "consistencia"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - leñoso
+- :comment: ''
+  :name: tallo del aguacate-20-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: [*]<br/>Valor\: "perenne"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: duración
+  :options:
+  - situación
+  - Ninguna es correcta
+  - duración
+  - consistencia
+- :comment: ''
+  :name: tallo del aguacate-21-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: [*]<br/>Valor\: "perenne"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - situación
+  - consistencia
+  - nombre científico
+- :comment: ''
+  :name: tallo del aguacate-22-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: "duración"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: perenne
+  :options:
+  - Ninguna es correcta
+  - perenne
+  - simpódico
+  - leñoso
+- :comment: ''
+  :name: tallo del aguacate-23-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: "duración"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - leñoso
+  - simpódico
+  - Ninguna es correcta
+  - Persea americana
+- :comment: ''
+  :name: tallo del aguacate-24t5table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "duración"</li><li>Valor\: "perenne"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del aguacate-25-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "duración"</li><li>Valor\: "leñoso"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-26t7table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "consistencia"</li><li>Valor\: "perenne"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-27t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "perenne"</li><li>Atributo\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - duración
+- :comment: ''
+  :name: tallo del aguacate-28t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "duración"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - perenne
+- :comment: ''
+  :name: tallo del aguacate-29-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: [*]<br/>Valor\: "simpódico"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: situación
+  :options:
+  - duración
+  - Ninguna es correcta
+  - situación
+  - consistencia
+- :comment: ''
+  :name: tallo del aguacate-30-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: [*]<br/>Valor\: "simpódico"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - nombre común
+  - duración
+  - consistencia
+- :comment: ''
+  :name: tallo del aguacate-31-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: "situación"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: simpódico
+  :options:
+  - suculenta
+  - perenne
+  - Ninguna es correcta
+  - simpódico
+- :comment: ''
+  :name: tallo del aguacate-32-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: "situación"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - suculenta
+  - perenne
+  - Ninguna es correcta
+  - leñoso
+- :comment: ''
+  :name: tallo del aguacate-33t5table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "situación"</li><li>Valor\: "simpódico"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del aguacate-34-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "situación"</li><li>Valor\: "suculenta"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-35t7table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "duración"</li><li>Valor\: "simpódico"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-36t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "simpódico"</li><li>Atributo\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - situación
+- :comment: ''
+  :name: tallo del aguacate-37t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "situación"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - simpódico
+- :comment: ''
+  :name: tallo del aguacate-38-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: [*]<br/>Valor\: "Persea
+    americana"<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: nombre científico
+  :options:
+  - situación
+  - Ninguna es correcta
+  - nombre común
+  - nombre científico
+- :comment: ''
+  :name: tallo del aguacate-39-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: [*]<br/>Valor\: "Persea
+    americana"<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - duración
+  - situación
+  - nombre común
+- :comment: ''
+  :name: tallo del aguacate-40-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: "nombre científico"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Persea americana
+  :options:
+  - Aguacate
+  - Manguífera índica
+  - Persea americana
+  - Ninguna es correcta
+- :comment: ''
+  :name: tallo del aguacate-41-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: "nombre científico"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - Mango
+  - Manguífera índica
+  - Aguacate
+- :comment: ''
+  :name: tallo del aguacate-42t5table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre científico"</li><li>Valor\: "Persea americana"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del aguacate-43-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre científico"</li><li>Valor\: "Manguífera índica"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-44t7table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre común"</li><li>Valor\: "Persea americana"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-45t9table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "Persea americana"</li><li>Atributo\: [?????? ??????????]</li></ul>Escribir 2
+    palabras.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - nombre científico
+- :comment: ''
+  :name: tallo del aguacate-46t9table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "nombre científico"</li><li>Valor\: [?????? ?????????]</li></ul>Escribir 2 palabras.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - Persea americana
+- :comment: ''
+  :name: tallo del aguacate-47-t1table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: [*]<br/>Valor\: "Aguacate"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: nombre común
+  :options:
+  - Ninguna es correcta
+  - nombre común
+  - situación
+  - nombre científico
+- :comment: ''
+  :name: tallo del aguacate-48-t2table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: [*]<br/>Valor\: "Aguacate"<br/>Elige
+    la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - nombre científico
+  - situación
+  - duración
+- :comment: ''
+  :name: tallo del aguacate-49-t3table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: "nombre común"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Aguacate
+  :options:
+  - Ninguna es correcta
+  - Mango
+  - Persea americana
+  - Aguacate
+- :comment: ''
+  :name: tallo del aguacate-50-t4table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Atributo\: "nombre común"<br/>Valor:
+    [*]<br/>Elige la opción correcta.<br/>'
+  :type: :choice
+  :feedback: ''
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - Persea americana
+  - Manguífera índica
+  - Mango
+- :comment: ''
+  :name: tallo del aguacate-51t5table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre común"</li><li>Valor\: "Aguacate"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'TRUE'
+- :comment: ''
+  :name: tallo del aguacate-52-t6table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre común"</li><li>Valor\: "Mango"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-53t7table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>La asociación siguiente es correcta\:<br/><ul><li>Atributo\:
+    "nombre científico"</li><li>Valor\: "Aguacate"</li></ul>'
+  :type: :boolean
+  :feedback: ''
+  :answer: 'FALSE'
+- :comment: ''
+  :name: tallo del aguacate-54t9table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Completa la siguiente asociación\:<br/><ul><li>Valor\:
+    "Aguacate"</li><li>Atributo\: [?????? ?????]</li></ul>Escribir 2 palabras.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - nombre común
+- :comment: ''
+  :name: tallo del aguacate-55t8table-$atributo$valor
+  :text: 'Concepto <b>tallo del aguacate</b><br/>Completa la siguiente asociación\:<br/><ul><li>Atributo\:
+    "nombre común"</li><li>Valor\: [*]</li></ul>Escribir una palabra.<br/>'
+  :type: :short
+  :feedback: ''
+  :answer:
+  - Aguacate

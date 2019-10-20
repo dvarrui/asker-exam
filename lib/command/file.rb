@@ -5,19 +5,10 @@ require 'rainbow'
 # Quizz#file
 class Quizz < Thor
   map ['f', '-f', '--file'] => 'file'
-  desc 'file NAME', 'Build output files, from HAML/XML input file.'
+  desc 'file NAME', 'Build exams, from YAML input file.'
   option :color, type: :boolean
   long_desc <<-LONGDESC
-  Create output files, from input file (HAML/XML format).
-
-  Build questions about contents defined into input file specified.
-
-  Examples:
-
-  1) #{Rainbow('asker input/foo/foo.haml').yellow}, Build questions from HAML file.\n
-  2) #{Rainbow('asker input/foo/foo.xml').yellow}, Build questions from XML file.\n
-  3) #{Rainbow('asker file --no-color input/foo/foo.haml').yellow}, Same as (1) but without colors.\n
-  4) #{Rainbow('asker projects/foo/foo.yaml').yellow}, Build questions from YAML project file.\n
+  Create exams, from questions input file (YAML format).
 
   LONGDESC
   def file(filename)
