@@ -1,10 +1,11 @@
 require_relative '../application'
 require_relative 'input_reader'
+require_relative '../exam/create_exam'
 
 module CreateExams
   def self.run(filename, options = {})
     process_input_params(filename, options)
-    debug
+    show_inputs
     questions = read_input
     create_output(questions)
   end
@@ -15,11 +16,12 @@ module CreateExams
     app.params.merge!(options)
   end
 
-  def self.debug
+  def self.show_inputs
     app = Application.instance
-    puts "[INFO] Creating exams from : #{Rainbow(app.get(:filename)).blue}"
-    puts "       * Questions number  : #{Rainbow(app.get(:questions_number)).blue}"
-    puts "       * Exams number      : #{Rainbow(app.get(:exams_number)).blue}"
+    puts "[INFO] Creating exams..."
+    puts "  ├── Input filename   : #{Rainbow(app.get(:filename)).blue}"
+    puts "  ├── Questions number : #{Rainbow(app.get(:questions_number)).blue}"
+    puts "  └── Exams number     : #{Rainbow(app.get(:exams_number)).blue}"
   end
 
   def self.read_input
@@ -29,6 +31,6 @@ module CreateExams
   end
 
   def self.create_output(questions)
-    puts questions[0].to_s
+    CreateExam.run({ questions: questions} )
   end
 end
