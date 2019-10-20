@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'rainbow'
+require_relative '../tool/create_exams'
 
 # Quizz#file
 class Quizz < Thor
@@ -13,7 +14,7 @@ class Quizz < Thor
   LONGDESC
   def file(filename)
     Rainbow.enabled = false if options['color'] == false
-    #Tool.new.start(filename)
+    CreateExams.debug(filename)
   end
 
   def method_missing(method, *_args, &_block)
