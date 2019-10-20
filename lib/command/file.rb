@@ -14,7 +14,7 @@ class Quizz < Thor
   LONGDESC
   def file(filename)
     Rainbow.enabled = false if options['color'] == false
-    CreateExams.debug(filename)
+    CreateExams.run(filename, options)
   end
 
   def method_missing(method, *_args, &_block)
