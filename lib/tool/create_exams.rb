@@ -6,6 +6,7 @@ module CreateExams
     process_input_params(filename, options)
     debug
     questions = read_input
+    create_output(questions)
   end
 
   def self.process_input_params(filename, options)
@@ -25,5 +26,9 @@ module CreateExams
     app = Application.instance
     questions = InputReader.read_yaml(app.get(:filename))
     questions
+  end
+
+  def self.create_output(questions)
+    puts questions[0].to_s
   end
 end
