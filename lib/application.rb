@@ -13,10 +13,10 @@ class Application
   end
 
   def reset
-    @name = 'quizz'
+    @name = 'quizzer'
     @version = '0.0.0'
-    @default = { questions_number: 10,
-                 exams_number: 1,
+    @default = { required_exams: 3,
+                 required_qxe: 10,
                  exams_format: :txt}
     @params = {}
   end

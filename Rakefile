@@ -30,3 +30,9 @@ def create_symbolic_link
   basedir = File.dirname(__FILE__)
   system("ln -s #{basedir}/quizz /usr/local/bin/quizz")
 end
+
+desc 'Check project files'
+task :check do
+  puts "[INFO] Checking project files..."
+  system('./quizzer version')
+end
