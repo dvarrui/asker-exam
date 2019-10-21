@@ -17,7 +17,7 @@ module CreateExams
   end
 
   def self.show_inputs(app)
-    puts "[INFO] Creating exams... input configurations."
+    puts Rainbow("[INFO] Configuration").bright
     puts "  ├── Input filepath   : #{Rainbow(app.get(:filepath)).blue}"
     puts "  ├── Questions count  : #{app.get(:questions_count)}"
     puts "  ├── Required exams   : #{Rainbow(app.get(:required_exams)).blue}"
