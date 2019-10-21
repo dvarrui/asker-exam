@@ -6,7 +6,7 @@ module CreateExams
   def self.run(filename, options = {})
     process_input_params(filename, options)
     questions = read_input
-    show_inputs
+    show_inputs(Application.instance)
     create_exams_with(questions)
   end
 
@@ -16,14 +16,13 @@ module CreateExams
     app.params.merge!(options)
   end
 
-  def self.show_inputs
-    app = Application.instance
+  def self.show_inputs(app)
     puts "[INFO] Creating exams... input configurations."
     puts "  ├── Input filename   : #{Rainbow(app.get(:filename)).blue}"
-    puts "  ├── Questions count  : #{Rainbow(app.get(:questions_count)).blue}"
+    puts "  ├── Questions count  : #{app.get(:questions_count)}"
     puts "  ├── Required exams   : #{Rainbow(app.get(:required_exams)).blue}"
     puts "  ├── Required Q x E   : #{Rainbow(app.get(:required_qxe)).blue}"
-    puts "  └── Questions used   : #{Rainbow(app.get(:questions_used_number)).blue}"
+    puts "  └── Questions used   : #{app.get(:questions_used_number)}"
   end
 
   def self.read_input
@@ -44,12 +43,9 @@ module CreateExams
   def self.create_exams_with(questions)
     app = Application.instance
     indexes = app.get(:selected_q_indexes)
-    puts indexes.to_s
     first = 0
     (1..app.get(:required_exams)).each do |i|
-      puts "[INFO] Creating exam nº #{i}"
-      puts " * Indexes = #{indexes[first, app.get(:required_qxe)]} first=#{first}"
-      CreateExam.run(questions, indexes[first, app.get(:required_qxe)])
+      CreateExam.run(i, "filename", questions, indexes[first, app.get(:required_qxe)])
       first += app.get(:required_qxe)
     end
   end
