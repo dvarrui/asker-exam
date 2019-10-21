@@ -1,6 +1,6 @@
 require_relative '../application'
 require_relative 'input_reader'
-require_relative '../exam/create_exam'
+require_relative 'exam'
 
 module CreateExams
   def self.run(filename, options = {})
