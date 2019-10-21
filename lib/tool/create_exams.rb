@@ -7,7 +7,7 @@ module CreateExams
     process_input_params(filename, options)
     questions = read_input
     show_inputs
-    create_output(questions)
+    create_exams_with(questions)
   end
 
   def self.process_input_params(filename, options)
@@ -40,7 +40,11 @@ module CreateExams
     questions
   end
 
-  def self.create_output(questions)
-    CreateExam.run({ questions: questions} )
+  def self.create_exams_with(questions)
+    app = Application.instance
+    (1..app.get(:required_exams)).each do |i|
+      puts "[INFO] Creating exam nº #{i}"
+      CreateExam.run(questions)
+    end
   end
 end
