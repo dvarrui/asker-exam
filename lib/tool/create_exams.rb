@@ -49,8 +49,8 @@ module CreateExams
     (1..app.get(:required_exams)).each do |i|
       puts "[INFO] Creating exam nº #{i}"
       puts " * Indexes = #{indexes[first, app.get(:required_qxe)]} first=#{first}"
+      CreateExam.run(questions, indexes[first, app.get(:required_qxe)])
       first += app.get(:required_qxe)
-      CreateExam.run(questions)
     end
   end
 end
