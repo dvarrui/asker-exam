@@ -45,7 +45,7 @@ module CreateExams
     indexes = app.get(:selected_q_indexes)
     first = 0
     (1..app.get(:required_exams)).each do |i|
-      CreateExam.run(i, "filename", questions, indexes[first, app.get(:required_qxe)])
+      CreateExam.run(i, 'demo', questions, indexes[first, app.get(:required_qxe)])
       first += app.get(:required_qxe)
     end
   end
