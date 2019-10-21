@@ -3,22 +3,22 @@ require_relative 'input_reader'
 require_relative 'exam'
 
 module CreateExams
-  def self.run(filename, options = {})
-    process_input_params(filename, options)
+  def self.run(filepath, options = {})
+    process_input_params(filepath, options)
     questions = read_input
     show_inputs(Application.instance)
     create_exams_with(questions)
   end
 
-  def self.process_input_params(filename, options)
+  def self.process_input_params(filepath, options)
     app = Application.instance
-    app.params[:filename] = filename
+    app.params[:filepath] = filepath
     app.params.merge!(options)
   end
 
   def self.show_inputs(app)
     puts "[INFO] Creating exams... input configurations."
-    puts "  ├── Input filename   : #{Rainbow(app.get(:filename)).blue}"
+    puts "  ├── Input filepath   : #{Rainbow(app.get(:filepath)).blue}"
     puts "  ├── Questions count  : #{app.get(:questions_count)}"
     puts "  ├── Required exams   : #{Rainbow(app.get(:required_exams)).blue}"
     puts "  ├── Required Q x E   : #{Rainbow(app.get(:required_qxe)).blue}"
@@ -27,7 +27,7 @@ module CreateExams
 
   def self.read_input
     app = Application.instance
-    questions = InputReader.read_yaml(app.get(:filename))
+    questions = InputReader.read_yaml(app.get(:filepath))
     app.params[:questions_count] = questions.count
     questions_used_number = app.get(:required_exams).to_i * app.get(:required_qxe).to_i
     app.params[:questions_used_number] = questions_used_number
@@ -42,10 +42,11 @@ module CreateExams
 
   def self.create_exams_with(questions)
     app = Application.instance
+    filename = File.basename(app.get(:filepath), ".*")
     indexes = app.get(:selected_q_indexes)
     first = 0
     (1..app.get(:required_exams)).each do |i|
-      CreateExam.run(i, 'demo', questions, indexes[first, app.get(:required_qxe)])
+      CreateExam.run(i, filename, questions, indexes[first, app.get(:required_qxe)])
       first += app.get(:required_qxe)
     end
   end
