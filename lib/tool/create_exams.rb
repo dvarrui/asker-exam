@@ -36,14 +36,20 @@ module CreateExams
     while indexes.count < questions_used_number do
       indexes << (0..questions.count).to_a.shuffle!
     end
+    indexes.flatten!
     app.params[:selected_q_indexes] = indexes[0, questions_used_number]
     questions
   end
 
   def self.create_exams_with(questions)
     app = Application.instance
+    indexes = app.get(:selected_q_indexes)
+    puts indexes.to_s
+    first = 0
     (1..app.get(:required_exams)).each do |i|
       puts "[INFO] Creating exam nº #{i}"
+      puts " * Indexes = #{indexes[first, app.get(:required_qxe)]} first=#{first}"
+      first += app.get(:required_qxe)
       CreateExam.run(questions)
     end
   end
