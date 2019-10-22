@@ -3,6 +3,8 @@
 # File: Rakefile
 # Usage: rake
 
+OUTPUTDIR = 'output'
+
 def packages
   # p = %w[rainbow terminal-table thor inifile minitest]
   p = %w[rainbow terminal-table thor minitest]
@@ -36,3 +38,11 @@ task :check do
   puts "[INFO] Checking project files..."
   system('./quizzer version')
 end
+
+desc 'Delete output files'
+task :clean do
+  FileUtils.rm_r OUTPUTDIR
+  FileUtils.mkdir OUTPUTDIR
+  system("echo '*.*' > #{OUTPUTDIR}/.gitignore")
+end
+

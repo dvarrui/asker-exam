@@ -31,7 +31,7 @@ module CreateExams
     app.params[:questions_count] = questions.count
     questions_used_number = app.get(:required_exams).to_i * app.get(:required_qxe).to_i
     app.params[:questions_used_number] = questions_used_number
-    indexes = (0..questions.count).to_a.shuffle!
+    indexes = (0..(questions.count-1)).to_a.shuffle!
     while indexes.count < questions_used_number do
       indexes << (0..questions.count).to_a.shuffle!
     end
