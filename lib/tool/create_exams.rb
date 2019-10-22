@@ -41,12 +41,17 @@ module CreateExams
   end
 
   def self.create_exams_with(questions)
+    puts Rainbow('[INFO] Exporting files...').bright
     app = Application.instance
     filename = File.basename(app.get(:filepath), ".*")
     indexes = app.get(:selected_q_indexes)
     first = 0
     (1..app.get(:required_exams)).each do |i|
-      Exam.create(i, filename, questions, indexes[first, app.get(:required_qxe)])
+      exam_questions = []
+      indexes[first, app.get(:required_qxe)].each do |i|
+        exam_questions << questions[i]
+      end
+      Exam.create(i, filename, exam_questions)
       first += app.get(:required_qxe)
     end
   end

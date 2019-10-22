@@ -1,11 +1,11 @@
 
 module TXTExporter
-  def self.run(filename, questions, indexes)
+  def self.run(filename, questions)
     puts "  ├── Exam     : exam-#{filename}.txt"
     puts "  └── Solution : solu-#{filename}.txt"
   end
 
-  def self.export_exam(filename, questions, indexes)
+  def self.export_exam(filename, questions)
    f = File.open(File.join('output', filename, 'w')
    f.write('=' * 50 + "\n")
    f.write("Created by : #{Application.instance.name}")
