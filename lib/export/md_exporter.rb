@@ -28,18 +28,42 @@ module MDExporter
       end
       return t
     elsif question[:type] == :match
-        t = "#{question[:text]}\n\nAssociate columns:\n" +
+        t = "#{question[:text]}\n\nAssociate columns:\n\n" +
             "| Column A | Column B |\n" +
             "| -------- | -------- |\n"
         question[:matching].each do |v|
           t += "| #{v[0]} | #{v[1]} |\n"
         end
-        return t
+        return t + "\n"
     elsif question[:type] == :short
       return "#{question[:text]}\n\nWrite your answer:\n\n"
     end
   end
 
   def self.export_solu(filename, questions)
+    f = File.open(File.join('output', filename), 'w')
+    t = "```\nFilename : #{filename}\nDate     : #{Time.now}\n```\n\n"
+    f.write(t)
+    questions.each_with_index do |q,i|
+      f.write("---\n")
+      f.write("**Question #{(i+1)}**\n\n")
+      f.write(formatter_qsolu(q))
+    end
+    f.close
+  end
+
+  def self.formatter_qsolu(question)
+    if question[:type] == :choice
+      return "#{question[:answer]}\n"
+    elsif question[:type] == :match
+        t = "| Column A | Column B |\n" +
+            "| -------- | -------- |\n"
+        question[:answer].each do |v|
+          t += "| #{v[0]} | #{v[1]} |\n"
+        end
+        return t
+    elsif question[:type] == :short
+      return "#{question[:answer]}\n"
+    end
   end
 end
