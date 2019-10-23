@@ -4,20 +4,22 @@ require_relative 'exam'
 
 module CreateExams
   def self.run(filepath, options = {})
-    process_input_params(filepath, options)
-    input = read_input
+    input = read_input(filepath)
+    process_input_params(filepath, options, input[:params])
     show_inputs(Application.instance)
     create_exams_with(input[:questions])
   end
 
-  def self.process_input_params(filepath, options)
+  def self.process_input_params(filepath, options, params)
     app = Application.instance
     app.params[:filepath] = filepath
     app.params.merge!(options)
+    app.params.merge!(params)
   end
 
   def self.show_inputs(app)
-    puts Rainbow("[INFO] Configuration").bright
+    puts Rainbow('[INFO] Configuration').bright
+    puts "  ├── Project name     : #{app.get(:projectname)}"
     puts "  ├── Input filepath   : #{Rainbow(app.get(:filepath)).blue}"
     puts "  ├── Questions count  : #{app.get(:questions_count)}"
     puts "  ├── Required exams   : #{Rainbow(app.get(:required_exams)).blue}"
@@ -25,9 +27,9 @@ module CreateExams
     puts "  └── Questions used   : #{app.get(:questions_used_number)}"
   end
 
-  def self.read_input
+  def self.read_input(filepath)
+    questions = InputReader.read_yaml(filepath)
     app = Application.instance
-    questions = InputReader.read_yaml(app.get(:filepath))
     app.params[:questions_count] = questions.count
     questions_used_number = app.get(:required_exams).to_i * app.get(:required_qxe).to_i
     app.params[:questions_used_number] = questions_used_number
@@ -43,7 +45,8 @@ module CreateExams
   def self.create_exams_with(questions)
     puts Rainbow('[INFO] Exporting files...').bright
     app = Application.instance
-    filename = File.basename(app.get(:filepath), ".*")
+    #filename = File.basename(app.get(:filepath), ".*")
+    filename = app.get(:projectname)
     indexes = app.get(:selected_q_indexes)
     first = 0
     (1..app.get(:required_exams)).each do |i|
