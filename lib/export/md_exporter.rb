@@ -31,7 +31,7 @@ module MDExporter
         t = "#{question[:text]}\n\nAssociate columns:\n" +
             "| Column A | Column B |\n" +
             "| -------- | -------- |\n"
-        question[:answer].each do |v|
+        question[:matching].each do |v|
           t += "| #{v[0]} | #{v[1]} |\n"
         end
         return t
