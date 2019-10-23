@@ -5,9 +5,9 @@ require_relative 'exam'
 module CreateExams
   def self.run(filepath, options = {})
     process_input_params(filepath, options)
-    questions = read_input
+    input = read_input
     show_inputs(Application.instance)
-    create_exams_with(questions)
+    create_exams_with(input[:questions])
   end
 
   def self.process_input_params(filepath, options)
