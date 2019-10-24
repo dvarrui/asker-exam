@@ -28,7 +28,8 @@ module CreateExams
   end
 
   def self.read_input(filepath)
-    questions = InputReader.read_yaml(filepath)
+    input = InputReader.read_yaml(filepath)
+    questions = input[:questions]
     app = Application.instance
     app.params[:questions_count] = questions.count
     questions_used_number = app.get(:required_exams).to_i * app.get(:required_qxe).to_i
@@ -39,7 +40,7 @@ module CreateExams
     end
     indexes.flatten!
     app.params[:selected_q_indexes] = indexes[0, questions_used_number]
-    questions
+    input
   end
 
   def self.create_exams_with(questions)

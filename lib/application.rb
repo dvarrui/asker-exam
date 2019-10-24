@@ -17,7 +17,7 @@ class Application
     @version = '0.0.0'
     @default = { required_exams: 3,
                  required_qxe: 10,
-                 exams_format: :txt}
+                 exams_format: :txt }
     @params = {}
   end
 

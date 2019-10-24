@@ -7,7 +7,7 @@ OUTPUTDIR = 'output'
 
 def packages
   # p = %w[rainbow terminal-table thor inifile minitest]
-  p = %w[rainbow terminal-table thor minitest]
+  %w[rainbow terminal-table thor minitest]
 end
 
 # Define tasks
