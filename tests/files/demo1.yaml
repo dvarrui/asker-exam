@@ -1,0 +1,61 @@
+---
+:params:
+  :lang: en
+  :projectname: demo1
+:questions:
+- :comment: ''
+  :name: 1-d1choose
+  :text: 'Definición \: <i>Es la niña de un cuento muy conocido que viste con ropa
+    de color rojo.</i><br/>Elige la opción que mejor se corresponda con la definición
+    anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Caperucita
+  :options:
+  - Lenador
+  - Abuelita
+  - Ninguna es correcta
+  - Caperucita
+- :comment: ''
+  :name: 4-d2def-mispelled
+  :text: <img src\="" alt\="image"><br/>Definición de <b>Caperucita</b>\:<br/> <i>Es
+    la niña de un cuenfo muy conocido que viste con ropa de color rojo.</i><br/>
+  :type: :choice
+  :feedback: 'Definition text mispelled!: Es la niña de un cuento muy conocido que
+    viste con ropa de color rojo.'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Falso
+  - Verdadero
+  - Error ortográfico
+- :comment: ''
+  :name: 8-d3hidden
+  :text: '<img src\="" alt\="image"><br/>Definición de <b>??????????</b>\:<br/> <i>Es
+    la niña de un cuento muy conocido que viste con ropa de color rojo.</i><br/></br><p>Nota:
+    Cada símbolo ? representa una letra, y * a una o varias palabras.</p>'
+  :type: :short
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - Caperucita
+  - caperucita roja
+- :comment: ''
+  :name: Caperucita-9-d4filtered
+  :text: Definición de <b>Caperucita</b>\:<br/> <i>Es la [1] de un [2] muy conocido
+    que [3] con [4] de color rojo.</i><br/><br/>(Coloca cada palabra en su posición
+    correcta dentro del texto)
+  :type: :match
+  :feedback: ''
+  :lang: :es
+  :answer: &1
+  - - '1'
+    - niña
+  - - '2'
+    - cuento
+  - - '3'
+    - viste
+  - - '4'
+    - ropa
+  :matching: *1
