@@ -6,15 +6,16 @@ require 'singleton'
 class Application
   include Singleton
 
-  attr_reader :name, :version, :params
+  NAME = 'quizzer'
+  VERSION = '0.0.1'
+
+  attr_reader :params
 
   def initialize
     reset
   end
 
   def reset
-    @name = 'quizzer'
-    @version = '0.0.0'
     @default = { required_exams: 3,
                  required_qxe: 10,
                  exams_format: :txt }
