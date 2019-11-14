@@ -1,22 +1,23 @@
-require_relative 'lib/asker-quizzer/application'
+require_relative 'lib/quizzer/application'
 
 Gem::Specification.new do |s|
   s.name        = Application::NAME
   s.version     = Application::VERSION
-  s.date        = '2019-11-08'
-  s.summary     = "TeutonClient (Teuton Software)"
-  s.description = "TeutonClient send evaluation requests to TeutonServer"
+  s.date        = '2019-11-14'
+  s.summary     = "AskerQuizzer create quizzes"
+  s.description = <<-EOF
+  AskerQuizzer create quizzes from questions Asker YAML input file
+  EOF
+  s.extra_rdoc_files = [ 'README.md' ]
 
   s.license     = 'GPL-3.0'
   s.authors     = ['David Vargas Ruiz']
-  s.email       = 'teuton.software@protonmail.com'
+  s.email       = 'asker.software@protonmail.com'
   s.homepage    = 'https://github.com/dvarrui/asker-quizzer'
 
   s.executables << 'quizzer'
-  s.files       = %w[lib/teuton-client/files/teuton-client.yaml
-                   lib/teuton-client/application.rb
-                   lib/teuton-client/input_loader.rb
-                   lib/teuton-client.rb]
+  s.files       = Dir.glob(File.join('lib','**','*.rb')) +
+                  Dir.glob(File.join('docs','**','*.md'))
 
   s.add_runtime_dependency 'rainbow', '~> 3.0'
   s.add_runtime_dependency 'terminal-table', '~> 3.0'

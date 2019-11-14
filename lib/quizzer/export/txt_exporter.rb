@@ -6,7 +6,7 @@ module TXTExporter
   end
 
   def self.export_exam(filename, questions)
-   f = File.open(File.join('output', filename, 'w')
+   f = File.open(File.join('output', filename, 'w'))
    f.write('=' * 50 + "\n")
    f.write("Created by : #{Application.instance.name}")
    f.write(" (version #{Application.instance.version})\n")

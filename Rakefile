@@ -65,7 +65,7 @@ task :check do
   puts "[INFO] Running #{testfile}"
   system(testfile)
   system('./quizzer version')
-  #Rake::Task['build'].invoke
+  Rake::Task['build'].invoke
 end
 
 def filter_uninstalled_gems(list)
