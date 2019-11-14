@@ -65,6 +65,7 @@ task :check do
   puts "[INFO] Running #{testfile}"
   system(testfile)
   system('./quizzer version')
+  #Rake::Task['build'].invoke
 end
 
 def filter_uninstalled_gems(list)
@@ -73,4 +74,15 @@ def filter_uninstalled_gems(list)
   fails = []
   list.each { |i| fails << i unless names.include?(i) }
   fails
+end
+
+desc 'Build gem'
+task :build do
+  puts "[ INFO ] Building gem..."
+  system('rm asker-quizzer-*.*.*.gem')
+  system('gem build asker-quizzer.gemspec')
+  puts "[ INFO ] Generating documentation..."
+  system('rm -r html/')
+  system('yardoc lib/* -o html')
+  puts "[ INFO ] Done"
 end
