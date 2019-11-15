@@ -1,4 +1,4 @@
-require_relative 'lib/quizzer/application'
+require_relative 'lib/asker-quizzer/application'
 
 Gem::Specification.new do |s|
   s.name        = Application::NAME
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.email       = 'asker.software@protonmail.com'
   s.homepage    = 'https://github.com/dvarrui/asker-quizzer'
 
-  s.executables << 'quizzer'
+  s.executables << 'asker-quizzer'
   s.files       = Dir.glob(File.join('lib','**','*.rb')) +
                   Dir.glob(File.join('docs','**','*.md'))
 

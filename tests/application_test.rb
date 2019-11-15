@@ -1,14 +1,14 @@
 #!/usr/bin/ruby
 
 require 'minitest/autorun'
-require_relative '../lib/quizzer/application'
+require_relative '../lib/asker-quizzer/application'
 
 # Test Application singleton
 class ApplicationTest < Minitest::Test
   def test_params
     app = Application.instance
     app.reset
-    assert_equal 'quizzer', Application::NAME
+    assert_equal 'asker-quizzer', Application::NAME
     assert_equal Hash.new, app.params
   end
 

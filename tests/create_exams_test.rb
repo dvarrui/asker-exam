@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
 require 'minitest/autorun'
-require_relative '../lib/quizzer/tool/create_exams'
+require_relative '../lib/asker-quizzer/tool/create_exams'
 
 # Test Application singleton
 class ApplicationTest < Minitest::Test

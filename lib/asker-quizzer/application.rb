@@ -6,7 +6,7 @@ require 'singleton'
 class Application
   include Singleton
 
-  NAME = 'quizzer'
+  NAME = 'asker-quizzer'
   VERSION = '0.0.1'
 
   attr_reader :params
