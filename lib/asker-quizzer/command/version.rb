@@ -7,6 +7,8 @@ require_relative '../application'
 class Quizz < Thor
   map ['v', '-v', '--version'] => 'version'
   desc 'version', 'show the program version'
+  ##
+  # Show application version
   def version
     print Rainbow(Application::NAME).bright.blue
     puts  ' (version ' + Rainbow(Application::VERSION).green + ')'

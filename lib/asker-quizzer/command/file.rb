@@ -3,7 +3,8 @@
 require 'rainbow'
 require_relative '../tool/create_exams'
 
-# Quizz#file
+##
+# Class Quizz is CLI interfaze for asker-inpit
 class Quizz < Thor
   map ['f', '-f', '--file'] => 'file'
   desc 'file NAME', 'Build exams, from YAML input file.'
@@ -12,6 +13,9 @@ class Quizz < Thor
   Create exams, from questions input file (YAML format).
 
   LONGDESC
+  ##
+  # Read questions from YAML filename and creates exams.
+  # @param filename [String] File path to YAML questions file.
   def file(filename)
     Rainbow.enabled = false if options['color'] == false
     CreateExams.run(filename, options)

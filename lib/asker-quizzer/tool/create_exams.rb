@@ -2,6 +2,8 @@ require_relative '../application'
 require_relative 'input_reader'
 require_relative 'exam'
 
+##
+# Contains methods to create exams.
 module CreateExams
   def self.run(filepath, options = {})
     input = read_input(filepath)

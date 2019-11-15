@@ -1,4 +1,6 @@
 
+##
+# Export exam an solution with TXT format
 module TXTExporter
   def self.run(filename, questions)
     puts "  ├── Exam     : exam-#{filename}.txt"

@@ -1,5 +1,10 @@
-
+##
+# Export questions to filename
 module MDExporter
+  ##
+  # Export 1 exam and his solution
+  # @param filename [String] File name
+  # @param questions [Array] Array of questions
   def self.run(filename, questions)
     f1 = "exam-#{filename}.md"
     f2 = "solu-#{filename}.md"
