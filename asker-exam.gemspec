@@ -19,8 +19,7 @@ Gem::Specification.new do |s|
   s.files       = Dir.glob(File.join('lib','**','*.rb')) +
                   Dir.glob(File.join('docs','**','*.md'))
 
-  s.add_runtime_dependency 'rainbow', '~> 3.0'
-  s.add_runtime_dependency 'terminal-table', '~> 3.0'
-  s.add_runtime_dependency 'thor', '~> 3.0'
-  s.add_development_dependency 'minitest', '~> 5.11'
+  s.add_runtime_dependency 'rainbow'
+  s.add_runtime_dependency 'terminal-table'
+  s.add_runtime_dependency 'thor'
 end
