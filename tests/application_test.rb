@@ -2,13 +2,14 @@
 
 require 'minitest/autorun'
 require_relative '../lib/asker/exam/application'
+require_relative '../lib/asker/exam/version'
 
 # Test Application singleton
 class ApplicationTest < Minitest::Test
   def test_params
     app = Application.instance
     app.reset
-    assert_equal 'asker-exam', Application::NAME
+    assert_equal 'asker-exam', Version::NAME
     assert_equal Hash.new, app.params
   end
 

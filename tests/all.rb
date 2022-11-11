@@ -3,5 +3,4 @@
 require 'minitest/autorun'
 
 require_relative 'application_test'
-require_relative 'create_exams_test'
-#require_relative 'rubocop_test'
+require_relative 'create_test'
