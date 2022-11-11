@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name        = Application::NAME
   s.version     = Application::VERSION
   s.date        = '2019-11-14'
-  s.summary     = "AskerQuizzer create quizzes"
+  s.summary     = "Asker-exam create quizzes from asker-tool output"
   s.description = <<-EOF
   AskerQuizzer create quizzes from questions Asker YAML input file
   EOF
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.license     = 'GPL-3.0'
   s.authors     = ['David Vargas Ruiz']
   s.email       = 'asker.software@protonmail.com'
-  s.homepage    = 'https://github.com/dvarrui/asker-quizzer'
+  s.homepage    = 'https://github.com/dvarrui/asker-exam'
 
   s.executables << 'asker-quizzer'
   s.files       = Dir.glob(File.join('lib','**','*.rb')) +
