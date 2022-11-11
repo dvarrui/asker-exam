@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
 
-require_relative 'lib/asker-quizzer'
+require_relative 'lib/asker-exam'
 
 Quizz.start(ARGV)
