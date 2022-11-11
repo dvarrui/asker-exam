@@ -2,4 +2,4 @@
 
 require_relative 'lib/asker/exam/cli'
 
-Asker::Exam::CLI.start(ARGV)
+CLI.start(ARGV)
