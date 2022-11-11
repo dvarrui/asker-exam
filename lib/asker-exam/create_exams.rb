@@ -1,9 +1,7 @@
-require_relative '../application'
+require_relative 'application'
 require_relative 'input_reader'
-require_relative 'exam'
+require_relative 'data/exam'
 
-##
-# Contains methods to create exams.
 module CreateExams
   def self.run(filepath, options = {})
     input = read_input(filepath)
@@ -30,7 +28,7 @@ module CreateExams
   end
 
   def self.read_input(filepath)
-    input = InputReader.read_yaml(filepath)
+    input = InputReader.read(filepath)
     questions = input[:questions]
     app = Application.instance
     app.params[:questions_count] = questions.count

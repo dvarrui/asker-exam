@@ -1,14 +1,14 @@
 
 require 'yaml'
+require "debug"
 
-##
-# Read input
 module InputReader
   ##
   # Read YAML filename
   # @param filename [String] YAML file name.
   # @return [Hash]
-  def self.read_yaml(filename)
-    YAML.load_file(filename)
+  def self.read(filename)
+    binding.break
+    YAML.load_file(File.read(filename))
   end
 end
