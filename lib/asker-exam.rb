@@ -1,7 +1,6 @@
-require 'thor'
-require_relative 'asker-exam/command/main'
+require_relative 'asker-exam/cli'
 
-# Command Line User Interface
-class Quizz < Thor
-  map ['h', '-h', '--help'] => 'help'
+module Asker
+  module Exam
+  end
 end
