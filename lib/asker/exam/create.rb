@@ -58,7 +58,7 @@ module Create
       indexes[first, app.get(:required_qxe)].each do |i|
         exam_questions << questions[i]
       end
-      Exam.create(i, filename, exam_questions)
+      ExportExam.call(i, filename, exam_questions)
       first += app.get(:required_qxe)
     end
   end

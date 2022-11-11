@@ -26,7 +26,9 @@ module MDExporter
   end
 
   def self.formatter_qexam(question)
-    if question[:type] == :choice
+    if question.nil?
+      puts "[WARN] question.nil?"
+    elsif question[:type] == :choice
       t = "#{question[:text]}\n\nChoose option:\n"
       question[:options].each_with_index do |v,i|
         t += "#{(i+1)}. #{v}\n"
@@ -58,7 +60,9 @@ module MDExporter
   end
 
   def self.formatter_qsolu(question)
-    if question[:type] == :boolean
+    if question.nil?
+      puts "[WARN] question.nil?"
+    elsif question[:type] == :boolean
       return "#{question[:answer]}\n"
     elsif question[:type] == :choice
       return "#{question[:answer]}\n"
