@@ -2,4 +2,4 @@
 
 require 'lib/asker-exam'
 
-Asker::Exam::Quizz.start(ARGV)
+AskerExam::Quizz.start(ARGV)
