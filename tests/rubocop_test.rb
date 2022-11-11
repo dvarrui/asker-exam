@@ -9,7 +9,7 @@ class RubocopTest < Minitest::Test
 
     @files[:lib] = []
     @files[:lib] << 'Rakefile'
-    @files[:lib] << 'lib/asker-quizzer/application.rb'
+    @files[:lib] << 'lib/asker/exam/application.rb'
   end
 
   def test_rubocop_lib

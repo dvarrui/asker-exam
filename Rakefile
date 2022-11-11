@@ -18,7 +18,7 @@ end
 def create_symbolic_link
   puts '[INFO] Creating symbolic link into /usr/local/bin'
   basedir = File.dirname(__FILE__)
-  system("ln -s #{basedir}/quizz /usr/local/bin/quizz")
+  system("ln -s #{basedir}/asker-exam /usr/local/bin/asker-exam")
 end
 
 desc 'Delete output files'
@@ -52,7 +52,6 @@ task :check do
 
   puts "[INFO] Running #{testfile}"
   system(testfile)
-  Rake::Task['build'].invoke
 end
 
 def filter_uninstalled_gems(list)
@@ -67,6 +66,6 @@ desc 'Build gem'
 task :build do
   puts "[ INFO ] Building gem..."
   system('rm asker-exam-*.*.*.gem')
-  system('gem build asker-quizzer.gemspec')
+  system('gem build asker-exam.gemspec')
   puts "[ INFO ] Done"
 end
