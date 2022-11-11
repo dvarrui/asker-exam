@@ -1,4 +1,10 @@
-require_relative 'asker-exam/cli'
+require_relative 'exam/cli'
+require_relative 'exam/create_exams'
 
-module AskerExam
+module Asker
+  module Exam
+    def self.create_exams(filename, options)
+      CreateExams.call(filename, options)
+    end
+  end
 end

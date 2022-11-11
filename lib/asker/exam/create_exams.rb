@@ -1,9 +1,12 @@
+require "rainbow"
 require_relative 'application'
 require_relative 'input_reader'
 require_relative 'data/exam'
 
 module CreateExams
-  def self.run(filepath, options = {})
+  def self.call(filepath, options = {})
+    Rainbow.enabled = false if options['color'] == false
+
     input = read_input(filepath)
     process_input_params(filepath, options, input[:params])
     show_inputs(Application.instance)

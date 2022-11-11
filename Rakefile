@@ -1,30 +1,18 @@
 # frozen_string_literal: true
 
-# File: Rakefile
-# Usage: rake
-
 OUTPUTDIR = 'output'
 
 def packages
-  # p = %w[rainbow terminal-table thor inifile minitest]
   %w[rainbow terminal-table thor minitest]
 end
 
-# Define tasks
 desc 'Default action => check'
 task default: :check do
 end
 
-desc 'Show Quizz Rake help'
+desc 'Show Rakefile help'
 task :help do
   system('rake -T')
-end
-
-desc 'Update Quizz'
-task :update do
-  puts '[INFO] Updating Quizzes...'
-  system('git pull')
-  install_gems packages
 end
 
 def create_symbolic_link
@@ -64,7 +52,6 @@ task :check do
 
   puts "[INFO] Running #{testfile}"
   system(testfile)
-  system('./quizzer version')
   Rake::Task['build'].invoke
 end
 
@@ -79,10 +66,7 @@ end
 desc 'Build gem'
 task :build do
   puts "[ INFO ] Building gem..."
-  system('rm asker-quizzer-*.*.*.gem')
+  system('rm asker-exam-*.*.*.gem')
   system('gem build asker-quizzer.gemspec')
-  puts "[ INFO ] Generating documentation..."
-  system('rm -r html/')
-  system('yardoc lib/* -o html')
   puts "[ INFO ] Done"
 end

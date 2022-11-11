@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
 
-require 'asker-exam'
+require 'asker/exam/cli'
 
-AskerExam::Quizz.start(ARGV)
+Asker::Exam::CLI.start(ARGV)

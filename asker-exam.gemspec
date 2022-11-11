@@ -1,20 +1,19 @@
-require_relative 'lib/asker-exam/application'
+require_relative 'lib/asker/exam/version'
 
 Gem::Specification.new do |s|
-  s.name        = Version::NAME
+  s.name        = Version::GEMNAME
   s.version     = Version::VERSION
-  s.date        = '2019-11-14'
-  s.summary     = "Asker-exam create quizzes from asker-tool output"
+  s.summary     = "Create quizzes from asker-tool output (YAML)"
   s.description = <<-EOF
-  AskerQuizzer create quizzes from questions Asker YAML input file
+  Create quizzes from questions Asker YAML input file
   EOF
 
   s.license     = 'GPL-3.0'
   s.authors     = ['David Vargas Ruiz']
-  s.email       = 'asker.software@protonmail.com'
+  s.email       = 'teuton.software@protonmail.com'
   s.homepage    = 'https://github.com/dvarrui/asker-exam'
 
-  s.executables << Version::GEMNAME
+  s.executables << Version::NAME
   s.files       = Dir.glob(File.join('lib','**','*.rb')) +
                   Dir.glob(File.join('docs','**','*.md'))
 
