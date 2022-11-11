@@ -1,9 +1,9 @@
 require "rainbow"
 require_relative 'application'
-require_relative 'input_reader'
-require_relative 'data/exam'
+require_relative 'export/exam'
+require_relative 'input/reader'
 
-module CreateExams
+module Create
   def self.call(filepath, options = {})
     Rainbow.enabled = false if options['color'] == false
 
