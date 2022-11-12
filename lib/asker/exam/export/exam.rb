@@ -1,16 +1,13 @@
 
 require_relative 'md_exporter'
 
-##
-# Create 1 exam file.
 module ExportExam
   ##
-  # Create exam file.
+  # Create exam/solution file.
   # @param id [Integer] Exam ID number
   # @param filename [String] Exam file name
   # @param questions [Array] Array of questions
-  def self.call(id, filename, questions)
-    MDExporter.run("#{format('%02d',id)}-#{filename}",
-                   questions)
+  def self.call(id, name, questions)
+    MDExporter.call(id, name, questions)
   end
 end

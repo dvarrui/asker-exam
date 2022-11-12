@@ -5,12 +5,12 @@ module MDExporter
   # Export 1 exam and his solution
   # @param filename [String] File name
   # @param questions [Array] Array of questions
-  def self.run(filename, questions)
-    f1 = "exam-#{filename}.md"
-    f2 = "solu-#{filename}.md"
-    puts "  => #{f1}, #{f2}"
-    export_exam(f1, questions)
-    export_solu(f2, questions)
+  def self.call(id, name, questions)
+    filename1 = format("%s-exam-%02d.md", name, id)
+    filename2 = format("%s-solu-%02d.md", name, id)
+    puts "  => #{filename1}, #{filename2}"
+    export_exam(filename1, questions)
+    export_solu(filename2, questions)
   end
 
   def self.export_exam(filename, questions)

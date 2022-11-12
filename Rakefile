@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-OUTPUTDIR = 'output'
-
 desc 'Default action => check'
 task default: :check do
 end
@@ -11,17 +9,19 @@ task :help do
   system('rake -T')
 end
 
-def create_symbolic_link
-  puts '[INFO] Creating symbolic link into /usr/local/bin'
-  basedir = File.dirname(__FILE__)
-  system("ln -s #{basedir}/asker-exam /usr/local/bin/asker-exam")
+desc 'Build gem'
+task :build do
+  puts "[ INFO ] Building gem..."
+  system('rm asker-exam-*.*.*.gem')
+  system('gem build asker-exam.gemspec')
+  puts "[ INFO ] Done"
 end
 
 desc 'Delete output files'
 task :clean do
+  OUTPUTDIR = 'output'
   FileUtils.rm_r OUTPUTDIR
   FileUtils.mkdir OUTPUTDIR
-  system("echo '*.*' > #{OUTPUTDIR}/.gitignore")
 end
 
 desc 'Check project files'
@@ -43,10 +43,9 @@ task :check do
   system(testfile)
 end
 
-desc 'Build gem'
-task :build do
-  puts "[ INFO ] Building gem..."
-  system('rm asker-exam-*.*.*.gem')
-  system('gem build asker-exam.gemspec')
-  puts "[ INFO ] Done"
+desc 'Create launcher'
+task :create_link do
+  puts '[INFO] Creating symbolic link into /usr/local/bin'
+  basedir = File.dirname(__FILE__)
+  system("sudo ln -s #{basedir}/asker-exam /usr/local/bin/asker-exam")
 end
