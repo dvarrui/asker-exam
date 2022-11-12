@@ -5,12 +5,10 @@ require_relative 'input/reader'
 
 module Create
   def self.call(filepath, options = {})
-    Rainbow.enabled = false if options['color'] == false
-
     input = read_input(filepath)
     process_input_params(filepath, options, input[:params])
     show_inputs(Application.instance)
-    create_exams_with(input[:questions])
+    create_exams_with(input[:questions], options["format"] || "txt")
   end
 
   def self.process_input_params(filepath, options, params)
@@ -21,13 +19,13 @@ module Create
   end
 
   def self.show_inputs(app)
-    puts Rainbow('[INFO] Configuration').bright
-    puts "  ├── Project name     : #{app.get(:projectname)}"
-    puts "  ├── Input filepath   : #{Rainbow(app.get(:filepath)).blue}"
-    puts "  ├── Questions count  : #{app.get(:questions_count)}"
-    puts "  ├── Required exams   : #{Rainbow(app.get(:required_exams)).blue}"
-    puts "  ├── Required Q x E   : #{Rainbow(app.get(:required_qxe)).blue}"
-    puts "  └── Questions used   : #{app.get(:questions_used_number)}"
+    puts "==> asker-exam: Show configuration"
+    puts "    Project name     : #{app.get(:projectname)}"
+    puts "    Input filepath   : #{app.get(:filepath)}"
+    puts "    Questions count  : #{app.get(:questions_count)}"
+    puts "    Required exams   : #{app.get(:required_exams)}"
+    puts "    Required Q x E   : #{app.get(:required_qxe)}"
+    puts "    Questions used   : #{app.get(:questions_used_number)}"
   end
 
   def self.read_input(filepath)
@@ -46,19 +44,22 @@ module Create
     input
   end
 
-  def self.create_exams_with(questions)
-    puts Rainbow('[INFO] Exporting files...').bright
+  def self.create_exams_with(questions, format="txt")
+    puts '==> asker-exam: Exporting files...'
     app = Application.instance
-    #filename = File.basename(app.get(:filepath), ".*")
     filename = app.get(:projectname)
     indexes = app.get(:selected_q_indexes)
     first = 0
     (1..app.get(:required_exams)).each do |i|
-      exam_questions = []
+      selected_questions = []
       indexes[first, app.get(:required_qxe)].each do |i|
-        exam_questions << questions[i]
+        index = i
+        if index >= questions.size
+          index = index % questions.size
+        end
+        selected_questions << questions[index]
       end
-      ExportExam.call(i, filename, exam_questions)
+      ExportExam.call(i, filename, selected_questions, format)
       first += app.get(:required_qxe)
     end
   end

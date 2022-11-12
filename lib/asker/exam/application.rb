@@ -6,9 +6,6 @@ require 'singleton'
 class Application
   include Singleton
 
-  NAME = 'asker-exam' # Application name
-  VERSION = '0.0.2'      # Application version
-
   attr_reader :params
 
   def initialize

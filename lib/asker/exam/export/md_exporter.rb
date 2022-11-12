@@ -8,7 +8,7 @@ module MDExporter
   def self.call(id, name, questions)
     filename1 = format("%s-exam-%02d.md", name, id)
     filename2 = format("%s-solu-%02d.md", name, id)
-    puts "  => #{filename1}, #{filename2}"
+    puts "    asker-exam: #{filename1}, #{filename2}"
     export_exam(filename1, questions)
     export_solu(filename2, questions)
   end

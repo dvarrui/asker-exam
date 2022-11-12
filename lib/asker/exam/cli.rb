@@ -1,7 +1,7 @@
 require 'thor'
-require 'rainbow'
 require_relative '../exam'
 require_relative 'version'
+require "debug"
 
 class CLI < Thor
   map ['h', '-h', '--help'] => 'help'
@@ -13,10 +13,10 @@ class CLI < Thor
   end
 
   map ['f', '-f', '--file'] => 'file'
-  desc 'file NAME', 'Build exams, from YAML input file.'
-  option :color, type: :boolean
+  desc 'file NAME', 'Build exams, from Asker questions YAML file.'
+  option :format, type: :string
   long_desc <<-LONGDESC
-  Create exams, from questions input file (YAML format).
+  Create exams, from Asker questions YAML file.
   LONGDESC
 
   ##
