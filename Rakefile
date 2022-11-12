@@ -2,15 +2,11 @@
 
 OUTPUTDIR = 'output'
 
-def packages
-  %w[rainbow terminal-table thor minitest]
-end
-
 desc 'Default action => check'
 task default: :check do
 end
 
-desc 'Show Rakefile help'
+desc 'Show rake help'
 task :help do
   system('rake -T')
 end
@@ -30,13 +26,6 @@ end
 
 desc 'Check project files'
 task :check do
-  fails = filter_uninstalled_gems(packages)
-  if fails.size.zero?
-    puts '[ OK ] Gems installed OK!'
-  else
-    puts '[FAIL] Gems not installed!: ' + fails.join(',')
-  end
-
   testfile = File.join('.', 'tests', 'all.rb')
   a = File.read(testfile).split("\n")
   b = a.select { |i| i.include? '_test' }
@@ -52,14 +41,6 @@ task :check do
 
   puts "[INFO] Running #{testfile}"
   system(testfile)
-end
-
-def filter_uninstalled_gems(list)
-  cmd = `gem list`.split("\n")
-  names = cmd.map { |i| i.split(' ')[0] }
-  fails = []
-  list.each { |i| fails << i unless names.include?(i) }
-  fails
 end
 
 desc 'Build gem'
