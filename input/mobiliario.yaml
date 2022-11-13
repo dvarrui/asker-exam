@@ -1,155 +1,41 @@
 ---
 :params:
-  :lang: en
+  :lang:
   :projectname: mobiliario
 :questions:
 - :comment: ''
   :name: silla-1-d1choose
-  :text: 'Definición \: <i>Asiento individual con patas y respaldo</i><br/>Elige la
-    opción que mejor se corresponda con la definición anterior.<br/>'
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQssd6Yc-ArqN23eEyOnVuyCutDb7wuRKbbVqm1F7hVbA2cmg1U4O0NZ-wSjg&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Asiento individual con patas y respaldo</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
   :type: :choice
   :feedback: ''
   :lang: :es
   :answer: silla
   :options:
-  - sofá
-  - mesa
   - Ninguna es correcta
+  - sofá
   - silla
+  - mesa
 - :comment: ''
   :name: silla-2-d1none-misspelled
-  :text: '<img src\="" alt\="image"><br/>Definición \: <i>Asiento individual con patas
-    y respaldo</i><br/>Elige la opción que mejor se corresponda con la definición
-    anterior.<br/>'
-  :type: :choice
-  :feedback: 'Option misspelled!: silla'
-  :lang: :es
-  :answer: Ninguna es correcta
-  :options:
-  - zilla
-  - Ninguna es correcta
-  - mesa
-  - sofá
-- :comment: ''
-  :name: silla-3-d1none
-  :text: 'Definición \: <i>Asiento individual con patas y respaldo</i><br/>Elige la
-    opción que mejor se corresponda con la definición anterior.<br/>'
-  :type: :choice
-  :feedback: ''
-  :lang: :es
-  :answer: Ninguna es correcta
-  :options:
-  - mesa
-  - Ninguna es correcta
-  - cama
-  - sofá
-- :comment: ''
-  :name: silla-4-d2def-mispelled
-  :text: <img src\="" alt\="image"><br/>Definición de <b>silla</b>\:<br/> <i>Asiento
-    individual con patos y respaldo</i><br/>
-  :type: :choice
-  :feedback: 'Definition text mispelled!: Asiento individual con patas y respaldo'
-  :lang: :es
-  :answer: Error ortográfico
-  :options:
-  - Falso
-  - Error ortográfico
-  - Verdadero
-- :comment: ''
-  :name: silla-5-d2name-mispelled
-  :text: <img src\="" alt\="image"><br/>Definición de <b>zilla</b>\:<br/> <i>Asiento
-    individual con patas y respaldo</i><br/>
-  :type: :choice
-  :feedback: 'Concept name mispelled!: silla'
-  :lang: :es
-  :answer: Error ortográfico
-  :options:
-  - Falso
-  - Verdadero
-  - Error ortográfico
-- :comment: ''
-  :name: silla-6-d2true
-  :text: <img src\="" alt\="image"><br/>Definición de <b>silla</b>\:<br/> <i>Asiento
-    individual con patas y respaldo</i><br/>
-  :type: :choice
-  :feedback: ''
-  :lang: :es
-  :answer: Verdadero
-  :options:
-  - Error ortográfico
-  - Verdadero
-  - Falso
-- :comment: ''
-  :name: silla-7-d2false-misspelled
-  :text: <img src\="" alt\="image"><br/>Definición de <b>sofá</b>\:<br/> <i>Asiento
-    individual con patas y respaldo</i><br/>
-  :type: :choice
-  :feedback: ''
-  :lang: :es
-  :answer: Falso
-  :options:
-  - Falso
-  - Error ortográfico
-  - Verdadero
-- :comment: ''
-  :name: silla-8-d3hidden
-  :text: '<img src\="" alt\="image"><br/>Definición de <b>[*]</b>\:<br/> <i>Asiento
-    individual con patas y respaldo</i><br/></br><p>Nota: Cada símbolo ? representa
-    una letra, y * a una o varias palabras.</p>'
-  :type: :short
-  :feedback: ''
-  :lang: :es
-  :answer:
-  - silla
-- :comment: ''
-  :name: silla-9-d4filtered
-  :text: Definición de <b>silla</b>\:<br/> <i>[1] [2] con [3] y [4].</i><br/><br/>(Coloca
-    cada palabra en su posición correcta dentro del texto)
-  :type: :match
-  :feedback: ''
-  :lang: :es
-  :answer: &1
-  - - '1'
-    - asiento
-  - - '2'
-    - individual
-  - - '3'
-    - patas
-  - - '4'
-    - respaldo
-  :matching: *1
-- :comment: ''
-  :name: silla-10-d1choose
-  :text: '<img src\="" alt\="image"><br/>Definición \: <i>Mueble que se coloca alrededor
-    de la mesa para sentarse</i><br/>Elige la opción que mejor se corresponda con
-    la definición anterior.<br/>'
-  :type: :choice
-  :feedback: ''
-  :lang: :es
-  :answer: silla
-  :options:
-  - silla
-  - sofá
-  - mesa
-  - Ninguna es correcta
-- :comment: ''
-  :name: silla-11-d1none-misspelled
-  :text: 'Definición \: <i>Mueble que se coloca alrededor de la mesa para sentarse</i><br/>Elige
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQx_QbqwS_xfgVibguBnKjMGEvZr5BHauf2hrQm-LPoiLWjE10LZ6C5p4bifcw&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Asiento individual con patas y respaldo</i><br/>Elige
     la opción que mejor se corresponda con la definición anterior.<br/>'
   :type: :choice
   :feedback: 'Option misspelled!: silla'
   :lang: :es
   :answer: Ninguna es correcta
   :options:
-  - mesa
-  - sillha
-  - sofá
   - Ninguna es correcta
+  - sofá
+  - mesa
+  - ailla
 - :comment: ''
-  :name: silla-12-d1none
-  :text: '<img src\="" alt\="image"><br/>Definición \: <i>Mueble que se coloca alrededor
-    de la mesa para sentarse</i><br/>Elige la opción que mejor se corresponda con
-    la definición anterior.<br/>'
+  :name: silla-3-d1none
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQrySFPUjxrNMOzwUke857ceznAIfvYSc2R9_fxX_Lndwr1wLiyB2oBUKHkLQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Asiento individual con patas y respaldo</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
   :type: :choice
   :feedback: ''
   :lang: :es
@@ -160,24 +46,12 @@
   - cama
   - Ninguna es correcta
 - :comment: ''
-  :name: silla-13-d2def-mispelled
-  :text: Definición de <b>silla</b>\:<br/> <i>Mueble que se coloca alrededor de la
-    mesa oara sentarse</i><br/>
+  :name: silla-4-d2def-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQPqFSIQ6CxscfDxyPWoyYLruwUrtlR_cCp9JsVEDEjBnJotKVLwoL6F5iblQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>silla</b>:<br/> <i>Asieñto individual con patas
+    y respaldo</i><br/>
   :type: :choice
-  :feedback: 'Definition text mispelled!: Mueble que se coloca alrededor de la mesa
-    para sentarse'
-  :lang: :es
-  :answer: Error ortográfico
-  :options:
-  - Falso
-  - Verdadero
-  - Error ortográfico
-- :comment: ''
-  :name: silla-14-d2name-mispelled
-  :text: <img src\="" alt\="image"><br/>Definición de <b>zilla</b>\:<br/> <i>Mueble
-    que se coloca alrededor de la mesa para sentarse</i><br/>
-  :type: :choice
-  :feedback: 'Concept name mispelled!: silla'
+  :feedback: 'Definition text misspelled!: Asiento individual con patas y respaldo'
   :lang: :es
   :answer: Error ortográfico
   :options:
@@ -185,136 +59,79 @@
   - Error ortográfico
   - Verdadero
 - :comment: ''
-  :name: silla-15-d2true
-  :text: Definición de <b>silla</b>\:<br/> <i>Mueble que se coloca alrededor de la
-    mesa para sentarse</i><br/>
+  :name: silla-5-d2name-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTzMns8KMV8Nk0GQO_VB_Cx8jf3CDzsXVoYfWP9eoShbXj_xmOl2nTZEN2sVA&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>sirla</b>:<br/> <i>Asiento individual con patas
+    y respaldo</i><br/>
+  :type: :choice
+  :feedback: 'Concept name misspelled!: silla'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Verdadero
+  - Error ortográfico
+  - Falso
+- :comment: ''
+  :name: silla-6-d2true-misspelled
+  :text: Definición de <b>silla</b>:<br/> <i>Asiento individual con patas y respaldo</i><br/>
   :type: :choice
   :feedback: ''
   :lang: :es
   :answer: Verdadero
   :options:
-  - Verdadero
   - Falso
+  - Verdadero
   - Error ortográfico
 - :comment: ''
-  :name: silla-16-d2false-misspelled
-  :text: <img src\="" alt\="image"><br/>Definición de <b>sofá</b>\:<br/> <i>Mueble
-    que se coloca alrededor de la mesa para sentarse</i><br/>
+  :name: silla-7-d2true
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQCOSr73oUVPG6bJqkmUtyZfooN3eDIOeOXDQ13rw6cM0Yjv-L-F9X30WA7Tw4&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>silla</b>:<br/> <i>Asiento individual con patas
+    y respaldo</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'TRUE'
+- :comment: ''
+  :name: silla-8-d2false-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTCkdeMU-Gx3QIajGJWtWeawj-917vKvQ6fDiAeMpHh0pDB7slAYLl2V0A0hg&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>sofá</b>:<br/> <i>Asiento individual con patas
+    y respaldo</i><br/>
   :type: :choice
   :feedback: ''
   :lang: :es
   :answer: Falso
   :options:
   - Error ortográfico
-  - Verdadero
   - Falso
+  - Verdadero
 - :comment: ''
-  :name: silla-17-d3hidden
-  :text: 'Definición de <b>[*]</b>\:<br/> <i>Mueble que se coloca alrededor de la
-    mesa para sentarse</i><br/></br><p>Nota: Cada símbolo ? representa una letra,
-    y * a una o varias palabras.</p>'
-  :type: :short
-  :feedback: ''
-  :lang: :es
-  :answer:
-  - silla
-- :comment: ''
-  :name: silla-18-d4filtered
-  :text: <img src\="" alt\="image"><br/>Definición de <b>silla</b>\:<br/> <i>[1] que
-    se [2] [3] de la mesa para [4].</i><br/><br/>(Coloca cada palabra en su posición
-    correcta dentro del texto)
-  :type: :match
-  :feedback: ''
-  :lang: :es
-  :answer: &2
-  - - '1'
-    - mueble
-  - - '2'
-    - coloca
-  - - '3'
-    - alrededor
-  - - '4'
-    - sentarse
-  :matching: *2
-- :comment: ''
-  :name: silla-19-i1choice
-  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
-    alt\\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
-    con la imagen anterior.<br/>
-  :type: :choice
-  :feedback: ''
-  :lang: :es
-  :answer: silla
-  :options:
-  - Ninguna es correcta
-  - silla
-  - mesa
-  - sofá
-- :comment: ''
-  :name: silla-20-i1misspelling
-  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
-    alt\\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
-    con la imagen anterior.<br/>
-  :type: :choice
-  :feedback: ''
-  :lang: :es
-  :answer: Ninguna es correcta
-  :options:
-  - sofá
-  - Ninguna es correcta
-  - mesa
-  - siya
-- :comment: ''
-  :name: silla-21-i1none
-  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
-    alt\\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
-    con la imagen anterior.<br/>
-  :type: :choice
-  :feedback: ''
-  :lang: :es
-  :answer: Ninguna es correcta
-  :options:
-  - mesa
-  - sofá
-  - Ninguna es correcta
-  - cama
-- :comment: ''
-  :name: silla-22-i2true
-  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
-    alt\\="image" width\="400" height\="300"><br/>La imagen anterior corresponde a
-    <b>silla</b>.
-  :type: :boolean
-  :feedback: ''
-  :lang: :es
-  :answer: 'TRUE'
-- :comment: ''
-  :name: silla-23-i2false
-  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
-    alt\\="image" width\="400" height\="300"><br/>La imagen anterior corresponde a
-    <b>sofá</b>.
+  :name: silla-9-d2false
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSzrO8MqOtSIGxwPCTkad4jTZYk1qxdsc0NqdxUIlTogNTg-4OB65Zc78vcgg&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>sofá</b>:<br/> <i>Asiento individual con patas
+    y respaldo</i><br/>
   :type: :boolean
   :feedback: ''
   :lang: :es
   :answer: 'FALSE'
 - :comment: ''
-  :name: silla-24-i3short
-  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
-    alt\\="image" width\="400" height\="300"><br/>Escribe la opción [*], que mejor
-    corresponda con la imagen anterior.<br/>
+  :name: silla-10-d3hidden
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQPqFSIQ6CxscfDxyPWoyYLruwUrtlR_cCp9JsVEDEjBnJotKVLwoL6F5iblQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>[*]</b>:<br/> <i>Asiento individual con patas
+    y respaldo</i><br/></br><p>Nota: Cada símbolo ? representa una letra, y * a una
+    o varias palabras.</p>'
   :type: :short
   :feedback: ''
   :lang: :es
   :answer:
   - silla
 - :comment: ''
-  :name: silla-25-i4filtered
-  :text: '<img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
-    alt\\="image" width\="400" height\="300"><br/>Definición\: <i>[1] [2] con [3]
-    y [4].</i><br/><br/>(Coloca cada palabra en su posición correcta dentro del texto)'
+  :name: silla-11-d4filtered
+  :text: Definición de <b>silla</b>:<br/> <i>[1] [2] con [3] y [4].</i><br/><br/>(Coloca
+    cada palabra en su posición correcta dentro del texto)
   :type: :match
   :feedback: ''
   :lang: :es
-  :answer: &3
+  :answer:
   - - '1'
     - asiento
   - - '2'
@@ -323,17 +140,134 @@
     - patas
   - - '4'
     - respaldo
-  :matching: *3
 - :comment: ''
-  :name: silla-26-i4filtered
-  :text: '<img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
-    alt\\="image" width\="400" height\="300"><br/>Definición\: <i>Mueble que se [1]
-    [2] de la [3] para [4].</i><br/><br/>(Coloca cada palabra en su posición correcta
-    dentro del texto)'
+  :name: silla-12-d1choose
+  :text: 'Definición: <i>Mueble que se coloca alrededor de la mesa para sentarse</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: silla
+  :options:
+  - Ninguna es correcta
+  - sofá
+  - silla
+  - mesa
+- :comment: ''
+  :name: silla-13-d1none-misspelled
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcR3UcSyIDN0IOFkZ4euDZT0FZZ40QJD8LMjNp4Z-DeOW7_KspBvfpzhH_cak0w&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Mueble que se coloca alrededor de la mesa para
+    sentarse</i><br/>Elige la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: 'Option misspelled!: silla'
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - mesa
+  - Ninguna es correcta
+  - sylla
+  - sofá
+- :comment: ''
+  :name: silla-14-d1none
+  :text: 'Definición: <i>Mueble que se coloca alrededor de la mesa para sentarse</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - cama
+  - Ninguna es correcta
+  - sofá
+  - mesa
+- :comment: ''
+  :name: silla-15-d2def-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcROiCHAdEwNQWHYCQIDgkHwJBrGhhmiLPIef8Dx4Ebilq_pgfJ_rMGfThuM7Y8&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>silla</b>:<br/> <i>Mueble que se koloca alrededor
+    de la mesa para sentarse</i><br/>
+  :type: :choice
+  :feedback: 'Definition text misspelled!: Mueble que se coloca alrededor de la mesa
+    para sentarse'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Error ortográfico
+  - Verdadero
+  - Falso
+- :comment: ''
+  :name: silla-16-d2name-misspelled
+  :text: Definición de <b>zilla</b>:<br/> <i>Mueble que se coloca alrededor de la
+    mesa para sentarse</i><br/>
+  :type: :choice
+  :feedback: 'Concept name misspelled!: silla'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Error ortográfico
+  - Verdadero
+  - Falso
+- :comment: ''
+  :name: silla-17-d2true-misspelled
+  :text: Definición de <b>silla</b>:<br/> <i>Mueble que se coloca alrededor de la
+    mesa para sentarse</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Verdadero
+  :options:
+  - Falso
+  - Verdadero
+  - Error ortográfico
+- :comment: ''
+  :name: silla-18-d2true
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTCkdeMU-Gx3QIajGJWtWeawj-917vKvQ6fDiAeMpHh0pDB7slAYLl2V0A0hg&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>silla</b>:<br/> <i>Mueble que se coloca alrededor
+    de la mesa para sentarse</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'TRUE'
+- :comment: ''
+  :name: silla-19-d2false-misspelled
+  :text: Definición de <b>sofá</b>:<br/> <i>Mueble que se coloca alrededor de la mesa
+    para sentarse</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Falso
+  :options:
+  - Verdadero
+  - Error ortográfico
+  - Falso
+- :comment: ''
+  :name: silla-20-d2false
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTzMns8KMV8Nk0GQO_VB_Cx8jf3CDzsXVoYfWP9eoShbXj_xmOl2nTZEN2sVA&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>sofá</b>:<br/> <i>Mueble que se coloca alrededor
+    de la mesa para sentarse</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'FALSE'
+- :comment: ''
+  :name: silla-21-d3hidden
+  :text: 'Definición de <b>[*]</b>:<br/> <i>Mueble que se coloca alrededor de la mesa
+    para sentarse</i><br/></br><p>Nota: Cada símbolo ? representa una letra, y * a
+    una o varias palabras.</p>'
+  :type: :short
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - silla
+- :comment: ''
+  :name: silla-22-d4filtered
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSkcjtTJYRhHv9D1cvLM5u4pOE_j-8WN_z3AWGK1Wcl2OX5AEjzXe1ZcutyeQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>silla</b>:<br/> <i>Mueble que se [1] [2] de
+    la [3] para [4].</i><br/><br/>(Coloca cada palabra en su posición correcta dentro
+    del texto)
   :type: :match
   :feedback: ''
   :lang: :es
-  :answer: &4
+  :answer:
   - - '1'
     - coloca
   - - '2'
@@ -342,4 +276,108 @@
     - mesa
   - - '4'
     - sentarse
-  :matching: *4
+- :comment: ''
+  :name: silla-23-i1choice
+  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
+    alt\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
+    con el fichero anterior.<br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: silla
+  :options:
+  - silla
+  - sofá
+  - Ninguna es correcta
+  - mesa
+- :comment: ''
+  :name: silla-24-i1misspelling
+  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
+    alt\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
+    con el fichero anterior.<br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - sofá
+  - cilla
+  - mesa
+- :comment: ''
+  :name: silla-25-i1none
+  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
+    alt\="image" width\="400" height\="300"><br/>Elige la opción que mejor se corresponda
+    con el fichero anterior.<br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - sofá
+  - cama
+  - mesa
+- :comment: ''
+  :name: silla-26-i2true
+  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
+    alt\="image" width\="400" height\="300"><br/>El fichero anterior corresponde a
+    <b>silla</b>.
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'TRUE'
+- :comment: ''
+  :name: silla-27-i2false
+  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
+    alt\="image" width\="400" height\="300"><br/>El fichero anterior corresponde a
+    <b>sofá</b>.
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'FALSE'
+- :comment: ''
+  :name: silla-28-i3short
+  :text: <img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
+    alt\="image" width\="400" height\="300"><br/>Escribe la opción [*], que mejor
+    corresponda con el fichero anterior.<br/>
+  :type: :short
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - silla
+- :comment: ''
+  :name: silla-29-i4filtered
+  :text: '<img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
+    alt\="image" width\="400" height\="300"><br/>Definición: <i>[1] [2] con [3] y
+    [4].</i><br/><br/>(Coloca cada palabra en su posición correcta dentro del texto)'
+  :type: :match
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - - '1'
+    - asiento
+  - - '2'
+    - individual
+  - - '3'
+    - patas
+  - - '4'
+    - respaldo
+- :comment: ''
+  :name: silla-30-i4filtered
+  :text: '<img src\="https://www.portobellostreet.es/imagenes_muebles/Muebles-Silla-colonial-Fusta-Bora-Bora.jpg"
+    alt\="image" width\="400" height\="300"><br/>Definición: <i>[1] que se [2] [3]
+    de la [4] para sentarse.</i><br/><br/>(Coloca cada palabra en su posición correcta
+    dentro del texto)'
+  :type: :match
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - - '1'
+    - mueble
+  - - '2'
+    - coloca
+  - - '3'
+    - alrededor
+  - - '4'
+    - mesa

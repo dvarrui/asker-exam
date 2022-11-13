@@ -1,41 +1,452 @@
 ---
 :params:
-  :lang: en
+  :lang:
   :projectname: caperucita
 :questions:
 - :comment: ''
   :name: Caperucita-1-d1choose
-  :text: 'Definición \: <i>Es la niña de un cuento muy conocido que viste con ropa
-    de color rojo.</i><br/>Elige la opción que mejor se corresponda con la definición
+  :text: 'Definición: <i>Es la niña de un cuento muy conocido que viste con ropa de
+    color rojo.</i><br/>Elige la opción que mejor se corresponda con la definición
     anterior.<br/>'
   :type: :choice
   :feedback: ''
   :lang: :es
   :answer: Caperucita
   :options:
-  - Leñador
   - Abuelita
   - Ninguna es correcta
+  - Leñador
   - Caperucita
 - :comment: ''
   :name: Caperucita-2-d1none-misspelled
-  :text: 'Definición \: <i>Es la niña de un cuento muy conocido que viste con ropa
-    de color rojo.</i><br/>Elige la opción que mejor se corresponda con la definición
-    anterior.<br/>'
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSPoJNSVIac3tMlM5BnN5YnwvQrPkHxDiDXtv6g1M0rpnWxX-n8GTVkxTyQYDc&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Es la niña de un cuento muy conocido que viste
+    con ropa de color rojo.</i><br/>Elige la opción que mejor se corresponda con la
+    definición anterior.<br/>'
   :type: :choice
   :feedback: 'Option misspelled!: Caperucita'
   :lang: :es
   :answer: Ninguna es correcta
   :options:
   - Leñador
-  - Abuelita
-  - Caoerucita
+  - Caperucyta
   - Ninguna es correcta
+  - Abuelita
 - :comment: ''
   :name: Caperucita-3-d1none
-  :text: '<img src\="" alt\="image"><br/>Definición \: <i>Es la niña de un cuento
-    muy conocido que viste con ropa de color rojo.</i><br/>Elige la opción que mejor
-    se corresponda con la definición anterior.<br/>'
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcR4YyYS6vxSVLFdpEHavhg49ffuj2LUm1nmIi_vULphtcHAbFFWrda6jXpCNp0&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Es la niña de un cuento muy conocido que viste
+    con ropa de color rojo.</i><br/>Elige la opción que mejor se corresponda con la
+    definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Leñador
+  - lobo
+  - Ninguna es correcta
+  - Abuelita
+- :comment: ''
+  :name: Caperucita-4-d2def-misspelled
+  :text: Definición de <b>Caperucita</b>:<br/> <i>Es la niña de un quento muy conocido
+    que viste con ropa de color rojo.</i><br/>
+  :type: :choice
+  :feedback: 'Definition text misspelled!: Es la niña de un cuento muy conocido que
+    viste con ropa de color rojo.'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Falso
+  - Error ortográfico
+  - Verdadero
+- :comment: ''
+  :name: Caperucita-5-d2name-misspelled
+  :text: Definición de <b>Chaperucita</b>:<br/> <i>Es la niña de un cuento muy conocido
+    que viste con ropa de color rojo.</i><br/>
+  :type: :choice
+  :feedback: 'Concept name misspelled!: Caperucita'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Falso
+  - Verdadero
+  - Error ortográfico
+- :comment: ''
+  :name: Caperucita-6-d2true-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcRKhtRVoaDqI5cIEseCTXH7Nue5emfjM5u1Cjq_y98ljNf2DC77fKwY9MCOXg&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Caperucita</b>:<br/> <i>Es la niña de un cuento
+    muy conocido que viste con ropa de color rojo.</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Verdadero
+  :options:
+  - Falso
+  - Verdadero
+  - Error ortográfico
+- :comment: ''
+  :name: Caperucita-7-d2true
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSgHtN1atExF0huMpKWDz8JV9vA42SB7OBEyBbRTQd7GMeX3eRkc6XVl6l9gA&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Caperucita</b>:<br/> <i>Es la niña de un cuento
+    muy conocido que viste con ropa de color rojo.</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'TRUE'
+- :comment: ''
+  :name: Caperucita-8-d2false-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSPoJNSVIac3tMlM5BnN5YnwvQrPkHxDiDXtv6g1M0rpnWxX-n8GTVkxTyQYDc&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Abuelita</b>:<br/> <i>Es la niña de un cuento
+    muy conocido que viste con ropa de color rojo.</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Falso
+  :options:
+  - Error ortográfico
+  - Falso
+  - Verdadero
+- :comment: ''
+  :name: Caperucita-9-d2false
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTYLk7-6uX3KLoKMh0HAXREA_bTQN5XSial8SrqGSSjnr_hSCHDmT4D0RfcUZQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Abuelita</b>:<br/> <i>Es la niña de un cuento
+    muy conocido que viste con ropa de color rojo.</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'FALSE'
+- :comment: ''
+  :name: Caperucita-10-d3hidden
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSDrOJpAodYIa0hOSNEvLnKup4WpIg0rjNyyeHWbco9WC4ezNHS8VNcI0hSEQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>??????????</b>:<br/> <i>Es la niña de un cuento
+    muy conocido que viste con ropa de color rojo.</i><br/></br><p>Nota: Cada símbolo
+    ? representa una letra, y * a una o varias palabras.</p>'
+  :type: :short
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - Caperucita
+  - caperucita roja
+- :comment: ''
+  :name: Caperucita-11-d4filtered
+  :text: Definición de <b>Caperucita</b>:<br/> <i>Es la niña de un [1] muy conocido
+    que viste con [2] de [3] [4].</i><br/><br/>(Coloca cada palabra en su posición
+    correcta dentro del texto)
+  :type: :match
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - - '1'
+    - cuento
+  - - '2'
+    - ropa
+  - - '3'
+    - color
+  - - '4'
+    - rojo
+- :comment: ''
+  :name: lobo-1-d1choose
+  :text: 'Definición: <i>Es un animal hambriento que vive en el bosque de caperucita</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: lobo
+  :options:
+  - Caperucita
+  - Ninguna es correcta
+  - lobo
+  - Leñador
+- :comment: ''
+  :name: lobo-2-d1none-misspelled
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcR_9sashV9h0PPHXvHuPxgDhCNuG5q-zPXW6HNMZfF5x9izOQewSRmEvrinj_U&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Es un animal hambriento que vive en el bosque
+    de caperucita</i><br/>Elige la opción que mejor se corresponda con la definición
+    anterior.<br/>'
+  :type: :choice
+  :feedback: 'Option misspelled!: lobo'
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Leñador
+  - Ninguna es correcta
+  - Caperucita
+  - lovo
+- :comment: ''
+  :name: lobo-3-d1none
+  :text: 'Definición: <i>Es un animal hambriento que vive en el bosque de caperucita</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - Leñador
+  - Abuelita
+  - Caperucita
+- :comment: ''
+  :name: lobo-4-d2def-misspelled
+  :text: Definición de <b>lobo</b>:<br/> <i>Es un animal hambriente que vive en el
+    bosque de caperucita</i><br/>
+  :type: :choice
+  :feedback: 'Definition text misspelled!: Es un animal hambriento que vive en el
+    bosque de caperucita'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Verdadero
+  - Falso
+  - Error ortográfico
+- :comment: ''
+  :name: lobo-5-d2name-misspelled
+  :text: Definición de <b>robo</b>:<br/> <i>Es un animal hambriento que vive en el
+    bosque de caperucita</i><br/>
+  :type: :choice
+  :feedback: 'Concept name misspelled!: lobo'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Falso
+  - Error ortográfico
+  - Verdadero
+- :comment: ''
+  :name: lobo-6-d2true-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSPE6BAlw6F3pwtw6dvsXcjbZ_FuK9J4vgfeCAzSJICq0voRgkXxA7DwdHApQ0&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>lobo</b>:<br/> <i>Es un animal hambriento que
+    vive en el bosque de caperucita</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Verdadero
+  :options:
+  - Verdadero
+  - Falso
+  - Error ortográfico
+- :comment: ''
+  :name: lobo-7-d2true
+  :text: Definición de <b>lobo</b>:<br/> <i>Es un animal hambriento que vive en el
+    bosque de caperucita</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'TRUE'
+- :comment: ''
+  :name: lobo-8-d2false-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcRu5X6XbyGFN7_y2xCA8rBnVsa_qsbIl-uVHoTIFQ1Y4NzWecVgu0GbqjMW_g&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Leñador</b>:<br/> <i>Es un animal hambriento
+    que vive en el bosque de caperucita</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Falso
+  :options:
+  - Error ortográfico
+  - Verdadero
+  - Falso
+- :comment: ''
+  :name: lobo-9-d2false
+  :text: Definición de <b>Leñador</b>:<br/> <i>Es un animal hambriento que vive en
+    el bosque de caperucita</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'FALSE'
+- :comment: ''
+  :name: lobo-10-d3hidden
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTrXT2ZDZZUcmW-aaJ32HfOKqxx1hNMGm_c9fIiAux2KO-l5yqh257zExHDU0Q&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>[*]</b>:<br/> <i>Es un animal hambriento que
+    vive en el bosque de caperucita</i><br/></br><p>Nota: Cada símbolo ? representa
+    una letra, y * a una o varias palabras.</p>'
+  :type: :short
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - lobo
+  - el lobo
+- :comment: ''
+  :name: lobo-11-d4filtered
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcR_9sashV9h0PPHXvHuPxgDhCNuG5q-zPXW6HNMZfF5x9izOQewSRmEvrinj_U&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>lobo</b>:<br/> <i>Es un [1] [2] que [3] en
+    el bosque de [4].</i><br/><br/>(Coloca cada palabra en su posición correcta dentro
+    del texto)
+  :type: :match
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - - '1'
+    - animal
+  - - '2'
+    - hambriento
+  - - '3'
+    - vive
+  - - '4'
+    - caperucita
+- :comment: ''
+  :name: lobo-12-d1choose
+  :text: 'Definición: <i>Se come a la abuelita y se hace pasar por ella</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: lobo
+  :options:
+  - lobo
+  - Leñador
+  - Ninguna es correcta
+  - Caperucita
+- :comment: ''
+  :name: lobo-13-d1none-misspelled
+  :text: 'Definición: <i>Se come a la abuelita y se hace pasar por ella</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: 'Option misspelled!: lobo'
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Caperucita
+  - robo
+  - Leñador
+  - Ninguna es correcta
+- :comment: ''
+  :name: lobo-14-d1none
+  :text: 'Definición: <i>Se come a la abuelita y se hace pasar por ella</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Abuelita
+  - Caperucita
+  - Ninguna es correcta
+  - Leñador
+- :comment: ''
+  :name: lobo-15-d2def-misspelled
+  :text: Definición de <b>lobo</b>:<br/> <i>Se come a ra abuelita y se hace pasar
+    por ella</i><br/>
+  :type: :choice
+  :feedback: 'Definition text misspelled!: Se come a la abuelita y se hace pasar por
+    ella'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Falso
+  - Error ortográfico
+  - Verdadero
+- :comment: ''
+  :name: lobo-16-d2name-misspelled
+  :text: Definición de <b>robo</b>:<br/> <i>Se come a la abuelita y se hace pasar
+    por ella</i><br/>
+  :type: :choice
+  :feedback: 'Concept name misspelled!: lobo'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Error ortográfico
+  - Verdadero
+  - Falso
+- :comment: ''
+  :name: lobo-17-d2true-misspelled
+  :text: Definición de <b>lobo</b>:<br/> <i>Se come a la abuelita y se hace pasar
+    por ella</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Verdadero
+  :options:
+  - Verdadero
+  - Error ortográfico
+  - Falso
+- :comment: ''
+  :name: lobo-18-d2true
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSBVrkRvzNbNGfp3gkClgkQUWXPZ20jRBhkFQPFKQo4uwx9oLTb0uC9SembsQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>lobo</b>:<br/> <i>Se come a la abuelita y se
+    hace pasar por ella</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'TRUE'
+- :comment: ''
+  :name: lobo-19-d2false-misspelled
+  :text: Definición de <b>Leñador</b>:<br/> <i>Se come a la abuelita y se hace pasar
+    por ella</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Falso
+  :options:
+  - Verdadero
+  - Falso
+  - Error ortográfico
+- :comment: ''
+  :name: lobo-20-d2false
+  :text: Definición de <b>Leñador</b>:<br/> <i>Se come a la abuelita y se hace pasar
+    por ella</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'FALSE'
+- :comment: ''
+  :name: lobo-21-d3hidden
+  :text: 'Definición de <b>[*]</b>:<br/> <i>Se come a la abuelita y se hace pasar
+    por ella</i><br/></br><p>Nota: Cada símbolo ? representa una letra, y * a una
+    o varias palabras.</p>'
+  :type: :short
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - lobo
+  - el lobo
+- :comment: ''
+  :name: lobo-22-d4filtered
+  :text: Definición de <b>lobo</b>:<br/> <i>Se [1] a la [2] y se [3] [4] por ella.</i><br/><br/>(Coloca
+    cada palabra en su posición correcta dentro del texto)
+  :type: :match
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - - '1'
+    - come
+  - - '2'
+    - abuelita
+  - - '3'
+    - hace
+  - - '4'
+    - pasar
+- :comment: ''
+  :name: Abuelita-1-d1choose
+  :text: 'Definición: <i>Vive en una case cerca del bosque</i><br/>Elige la opción
+    que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Abuelita
+  :options:
+  - Leñador
+  - Caperucita
+  - Ninguna es correcta
+  - Abuelita
+- :comment: ''
+  :name: Abuelita-2-d1none-misspelled
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcRu5X6XbyGFN7_y2xCA8rBnVsa_qsbIl-uVHoTIFQ1Y4NzWecVgu0GbqjMW_g&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Vive en una case cerca del bosque</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: 'Option misspelled!: Abuelita'
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Abúelita
+  - Caperucita
+  - Ninguna es correcta
+  - Leñador
+- :comment: ''
+  :name: Abuelita-3-d1none
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQt5QsJu9lZ7QydBQCnWh2JmipGPc0QZv_2LiqQjL29m-vNkHLFdd1gFvOS1w&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Vive en una case cerca del bosque</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
   :type: :choice
   :feedback: ''
   :lang: :es
@@ -43,15 +454,28 @@
   :options:
   - lobo
   - Ninguna es correcta
-  - Abuelita
+  - Caperucita
   - Leñador
 - :comment: ''
-  :name: Caperucita-4-d2def-mispelled
-  :text: <img src\="" alt\="image"><br/>Definición de <b>Caperucita</b>\:<br/> <i>Es
-    la niña de un cuenfo muy conocido que viste con ropa de color rojo.</i><br/>
+  :name: Abuelita-4-d2def-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTasqYnh7x24cQ6XLwN4Qpwxezzt-IfGX5l-r-lIDtTkZ7XrSiyNqf109P0tSg&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Abuelita</b>:<br/> <i>Vivehen una case cerca
+    del bosque</i><br/>
   :type: :choice
-  :feedback: 'Definition text mispelled!: Es la niña de un cuento muy conocido que
-    viste con ropa de color rojo.'
+  :feedback: 'Definition text misspelled!: Vive en una case cerca del bosque'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Error ortográfico
+  - Falso
+  - Verdadero
+- :comment: ''
+  :name: Abuelita-5-d2name-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSuWLJzkqiWsOcVw3oytSWspIQ4jrRk4Gm40PcXQ23tr5yaCLYb_7iQWLAmyw&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Avuelita</b>:<br/> <i>Vive en una case cerca
+    del bosque</i><br/>
+  :type: :choice
+  :feedback: 'Concept name misspelled!: Abuelita'
   :lang: :es
   :answer: Error ortográfico
   :options:
@@ -59,21 +483,396 @@
   - Verdadero
   - Error ortográfico
 - :comment: ''
-  :name: Caperucita-5-d2name-mispelled
-  :text: <img src\="" alt\="image"><br/>Definición de <b>Caperúcita</b>\:<br/> <i>Es
-    la niña de un cuento muy conocido que viste con ropa de color rojo.</i><br/>
+  :name: Abuelita-6-d2true-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSylta-0ACrxTh3dG4gpMJricKQvT83TnZbzQPIVoq6eoG9fAX4kTq8bO3LlA&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Abuelita</b>:<br/> <i>Vive en una case cerca
+    del bosque</i><br/>
   :type: :choice
-  :feedback: 'Concept name mispelled!: Caperucita'
+  :feedback: ''
+  :lang: :es
+  :answer: Verdadero
+  :options:
+  - Falso
+  - Verdadero
+  - Error ortográfico
+- :comment: ''
+  :name: Abuelita-7-d2true
+  :text: Definición de <b>Abuelita</b>:<br/> <i>Vive en una case cerca del bosque</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'TRUE'
+- :comment: ''
+  :name: Abuelita-8-d2false-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTYLk7-6uX3KLoKMh0HAXREA_bTQN5XSial8SrqGSSjnr_hSCHDmT4D0RfcUZQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Caperucita</b>:<br/> <i>Vive en una case cerca
+    del bosque</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Falso
+  :options:
+  - Verdadero
+  - Error ortográfico
+  - Falso
+- :comment: ''
+  :name: Abuelita-9-d2false
+  :text: Definición de <b>Caperucita</b>:<br/> <i>Vive en una case cerca del bosque</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'FALSE'
+- :comment: ''
+  :name: Abuelita-10-d3hidden
+  :text: 'Definición de <b>[*]</b>:<br/> <i>Vive en una case cerca del bosque</i><br/></br><p>Nota:
+    Cada símbolo ? representa una letra, y * a una o varias palabras.</p>'
+  :type: :short
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - Abuelita
+  - la abuelita
+- :comment: ''
+  :name: Abuelita-11-d4filtered
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcRHXirit5t0ahU0RMuN6xAsJXcj85P2hMQXyA9vVPGR7N3RKRGJmfT9OhsPXyA&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Abuelita</b>:<br/> <i>[1] en una [2] [3] del
+    [4].</i><br/><br/>(Coloca cada palabra en su posición correcta dentro del texto)
+  :type: :match
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - - '1'
+    - vive
+  - - '2'
+    - case
+  - - '3'
+    - cerca
+  - - '4'
+    - bosque
+- :comment: ''
+  :name: Abuelita-12-d1choose
+  :text: 'Definición: <i>Está esperando que venga su nieta a traerla la merienda</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Abuelita
+  :options:
+  - Leñador
+  - Abuelita
+  - Caperucita
+  - Ninguna es correcta
+- :comment: ''
+  :name: Abuelita-13-d1none-misspelled
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcR8WkQUwCJh8Vl-HTORmZLIvENlNYIB7Ly6pjmVFaX7h15hrHecX9llrXcc5j0&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Está esperando que venga su nieta a traerla la
+    merienda</i><br/>Elige la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: 'Option misspelled!: Abuelita'
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - Caperucita
+  - Abuélita
+  - Leñador
+- :comment: ''
+  :name: Abuelita-14-d1none
+  :text: 'Definición: <i>Está esperando que venga su nieta a traerla la merienda</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Leñador
+  - Caperucita
+  - Ninguna es correcta
+  - lobo
+- :comment: ''
+  :name: Abuelita-15-d2def-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQ_Y2vHjgC7fI7hYjw3PiDZks4vBbD0RTboqvLqIwIYV9GwVcUS9Fqy94s1vQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Abuelita</b>:<br/> <i>Está esperando que venga
+    su nyeta a traerla la merienda</i><br/>
+  :type: :choice
+  :feedback: 'Definition text misspelled!: Está esperando que venga su nieta a traerla
+    la merienda'
   :lang: :es
   :answer: Error ortográfico
+  :options:
+  - Error ortográfico
+  - Verdadero
+  - Falso
+- :comment: ''
+  :name: Abuelita-16-d2name-misspelled
+  :text: Definición de <b>Abuélita</b>:<br/> <i>Está esperando que venga su nieta
+    a traerla la merienda</i><br/>
+  :type: :choice
+  :feedback: 'Concept name misspelled!: Abuelita'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Verdadero
+  - Error ortográfico
+  - Falso
+- :comment: ''
+  :name: Abuelita-17-d2true-misspelled
+  :text: Definición de <b>Abuelita</b>:<br/> <i>Está esperando que venga su nieta
+    a traerla la merienda</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Verdadero
+  :options:
+  - Error ortográfico
+  - Verdadero
+  - Falso
+- :comment: ''
+  :name: Abuelita-18-d2true
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTenc79p4qopZlEwiwZXy3B-2m1uL1T1YDculy3huMptj8u7lZrHA_rGhm7cn8&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Abuelita</b>:<br/> <i>Está esperando que venga
+    su nieta a traerla la merienda</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'TRUE'
+- :comment: ''
+  :name: Abuelita-19-d2false-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcTb1RAZkEY0LXjgJeNeLJgMc2pzDgjpIe3CNiEw5aNDecysiXYPJMSP7RmF6Q&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Caperucita</b>:<br/> <i>Está esperando que
+    venga su nieta a traerla la merienda</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Falso
+  :options:
+  - Verdadero
+  - Falso
+  - Error ortográfico
+- :comment: ''
+  :name: Abuelita-20-d2false
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcR9ATpGBZ171BuV4rQDkdbj8RhbTMh-UjGP0B9jrWWfohcu2YZUMli2qgI1WfI&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Caperucita</b>:<br/> <i>Está esperando que
+    venga su nieta a traerla la merienda</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'FALSE'
+- :comment: ''
+  :name: Abuelita-21-d3hidden
+  :text: 'Definición de <b>[*]</b>:<br/> <i>Está esperando que venga su nieta a traerla
+    la merienda</i><br/></br><p>Nota: Cada símbolo ? representa una letra, y * a una
+    o varias palabras.</p>'
+  :type: :short
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - Abuelita
+  - la abuelita
+- :comment: ''
+  :name: Abuelita-22-d4filtered
+  :text: Definición de <b>Abuelita</b>:<br/> <i>[1] [2] que [3] su nieta a traerla
+    la [4].</i><br/><br/>(Coloca cada palabra en su posición correcta dentro del texto)
+  :type: :match
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - - '1'
+    - está
+  - - '2'
+    - esperando
+  - - '3'
+    - venga
+  - - '4'
+    - merienda
+- :comment: ''
+  :name: Leñador-1-d1choose
+  :text: 'Definición: <i>Es el héroe del cuento de caperucita</i><br/>Elige la opción
+    que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Leñador
+  :options:
+  - Caperucita
+  - Abuelita
+  - Leñador
+  - Ninguna es correcta
+- :comment: ''
+  :name: Leñador-2-d1none-misspelled
+  :text: 'Definición: <i>Es el héroe del cuento de caperucita</i><br/>Elige la opción
+    que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: 'Option misspelled!: Leñador'
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Ninguna es correcta
+  - Caperucita
+  - Lenador
+  - Abuelita
+- :comment: ''
+  :name: Leñador-3-d1none
+  :text: 'Definición: <i>Es el héroe del cuento de caperucita</i><br/>Elige la opción
+    que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Abuelita
+  - Caperucita
+  - lobo
+  - Ninguna es correcta
+- :comment: ''
+  :name: Leñador-4-d2def-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSUGxQnuGgAIWyTss8rG5x8ia4sSQG2Ouz56YE4iOQ8gha8J5HH8-1clTWfiQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Leñador</b>:<br/> <i>Es él héroe del cuento
+    de caperucita</i><br/>
+  :type: :choice
+  :feedback: 'Definition text misspelled!: Es el héroe del cuento de caperucita'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Falso
+  - Verdadero
+  - Error ortográfico
+- :comment: ''
+  :name: Leñador-5-d2name-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcStNOnRi5bFkPnUZ8hkeVntPUIh8NOFXo_OKmIyL3_qlhA3d2nlZJAsK-XeFJA&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Leñodor</b>:<br/> <i>Es el héroe del cuento
+    de caperucita</i><br/>
+  :type: :choice
+  :feedback: 'Concept name misspelled!: Leñador'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Falso
+  - Verdadero
+  - Error ortográfico
+- :comment: ''
+  :name: Leñador-6-d2true-misspelled
+  :text: Definición de <b>Leñador</b>:<br/> <i>Es el héroe del cuento de caperucita</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Verdadero
   :options:
   - Falso
   - Error ortográfico
   - Verdadero
 - :comment: ''
-  :name: Caperucita-6-d2true
-  :text: <img src\="" alt\="image"><br/>Definición de <b>Caperucita</b>\:<br/> <i>Es
-    la niña de un cuento muy conocido que viste con ropa de color rojo.</i><br/>
+  :name: Leñador-7-d2true
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcRKhtRVoaDqI5cIEseCTXH7Nue5emfjM5u1Cjq_y98ljNf2DC77fKwY9MCOXg&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Leñador</b>:<br/> <i>Es el héroe del cuento
+    de caperucita</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'TRUE'
+- :comment: ''
+  :name: Leñador-8-d2false-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcR_9sashV9h0PPHXvHuPxgDhCNuG5q-zPXW6HNMZfF5x9izOQewSRmEvrinj_U&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Abuelita</b>:<br/> <i>Es el héroe del cuento
+    de caperucita</i><br/>
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Falso
+  :options:
+  - Falso
+  - Verdadero
+  - Error ortográfico
+- :comment: ''
+  :name: Leñador-9-d2false
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcSyATz7jBc1fkHMK6XzWLx4FnbjU88mJgpktEroYfd1eaWWWt3J9IuMibm62iY&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Abuelita</b>:<br/> <i>Es el héroe del cuento
+    de caperucita</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'FALSE'
+- :comment: ''
+  :name: Leñador-10-d3hidden
+  :text: 'Definición de <b>[*]</b>:<br/> <i>Es el héroe del cuento de caperucita</i><br/></br><p>Nota:
+    Cada símbolo ? representa una letra, y * a una o varias palabras.</p>'
+  :type: :short
+  :feedback: ''
+  :lang: :es
+  :answer:
+  - Leñador
+  - el leñador
+- :comment: ''
+  :name: Leñador-11-d1choose
+  :text: '<img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcRebELFlC7gLQDA2Dbzi_VyWi1l4KSk8c38UKBHq5jMFN1HAK3297B69G_7bg&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición: <i>Con su hacha, libera a la mujer del malo del
+    cuento</i><br/>Elige la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Leñador
+  :options:
+  - Abuelita
+  - Ninguna es correcta
+  - Caperucita
+  - Leñador
+- :comment: ''
+  :name: Leñador-12-d1none-misspelled
+  :text: 'Definición: <i>Con su hacha, libera a la mujer del malo del cuento</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: 'Option misspelled!: Leñador'
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - Abuelita
+  - Caperucita
+  - Leñodor
+  - Ninguna es correcta
+- :comment: ''
+  :name: Leñador-13-d1none
+  :text: 'Definición: <i>Con su hacha, libera a la mujer del malo del cuento</i><br/>Elige
+    la opción que mejor se corresponda con la definición anterior.<br/>'
+  :type: :choice
+  :feedback: ''
+  :lang: :es
+  :answer: Ninguna es correcta
+  :options:
+  - lobo
+  - Caperucita
+  - Ninguna es correcta
+  - Abuelita
+- :comment: ''
+  :name: Leñador-14-d2def-misspelled
+  :text: Definición de <b>Leñador</b>:<br/> <i>Con au hacha, libera a la mujer del
+    malo del cuento</i><br/>
+  :type: :choice
+  :feedback: 'Definition text misspelled!: Con su hacha, libera a la mujer del malo
+    del cuento'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Error ortográfico
+  - Falso
+  - Verdadero
+- :comment: ''
+  :name: Leñador-15-d2name-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcS7WJsOxYZFg05T-Kr3uLwbC5QLH6F7sMdzUHKZUy4KqK6SEIVf8qgnzFNQIQ&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Leñader</b>:<br/> <i>Con su hacha, libera a
+    la mujer del malo del cuento</i><br/>
+  :type: :choice
+  :feedback: 'Concept name misspelled!: Leñador'
+  :lang: :es
+  :answer: Error ortográfico
+  :options:
+  - Error ortográfico
+  - Verdadero
+  - Falso
+- :comment: ''
+  :name: Leñador-16-d2true-misspelled
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcS_RKONnA9r-FiMkrg6a-nkfDC8fjQa3k9BwLL6X76mt0vV3xB_zVATjt19HA&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Leñador</b>:<br/> <i>Con su hacha, libera a
+    la mujer del malo del cuento</i><br/>
   :type: :choice
   :feedback: ''
   :lang: :es
@@ -83,48 +882,59 @@
   - Falso
   - Verdadero
 - :comment: ''
-  :name: Caperucita-7-d2false-misspelled
-  :text: <img src\="" alt\="image"><br/>Definición de <b>Abuelita</b>\:<br/> <i>Es
-    la niña de un cuento muy conocido que viste con ropa de color rojo.</i><br/>
+  :name: Leñador-17-d2true
+  :text: <img src\="https://encrypted-tbn0.gstatic.com/images?q\=tbn:ANd9GcQAPQ6eqbNSnty9ojFvVfQasdYsZbvR2KMi1Qj54X113VASsDZ_3EbDzPfSF94&amp;s/></div></a></td></tr><tr><td><a"
+    alt\="image"><br/>Definición de <b>Leñador</b>:<br/> <i>Con su hacha, libera a
+    la mujer del malo del cuento</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'TRUE'
+- :comment: ''
+  :name: Leñador-18-d2false-misspelled
+  :text: Definición de <b>Abuelita</b>:<br/> <i>Con su hacha, libera a la mujer del
+    malo del cuento</i><br/>
   :type: :choice
   :feedback: ''
   :lang: :es
   :answer: Falso
   :options:
-  - Falso
   - Verdadero
+  - Falso
   - Error ortográfico
 - :comment: ''
-  :name: Caperucita-8-d3hidden
-  :text: '<img src\="" alt\="image"><br/>Definición de <b>??????????</b>\:<br/> <i>Es
-    la niña de un cuento muy conocido que viste con ropa de color rojo.</i><br/></br><p>Nota:
-    Cada símbolo ? representa una letra, y * a una o varias palabras.</p>'
+  :name: Leñador-19-d2false
+  :text: Definición de <b>Abuelita</b>:<br/> <i>Con su hacha, libera a la mujer del
+    malo del cuento</i><br/>
+  :type: :boolean
+  :feedback: ''
+  :lang: :es
+  :answer: 'FALSE'
+- :comment: ''
+  :name: Leñador-20-d3hidden
+  :text: 'Definición de <b>[*]</b>:<br/> <i>Con su hacha, libera a la mujer del malo
+    del cuento</i><br/></br><p>Nota: Cada símbolo ? representa una letra, y * a una
+    o varias palabras.</p>'
   :type: :short
   :feedback: ''
   :lang: :es
   :answer:
-  - Caperucita
-  - caperucita roja
+  - Leñador
+  - el leñador
 - :comment: ''
-  :name: lobo-7-d2false-misspelled
-  :text: Definición de <b>Leñador</b>\:<br/> <i>Es un animal hambriento que vive en
-    el bosque de caperucita</i><br/>
-  :type: :choice
-  :feedback: ''
-  :lang: :es
-  :answer: Falso
-  :options:
-  - Error ortográfico
-  - Verdadero
-  - Falso
-- :comment: ''
-  :name: lobo-8-d3hidden
-  :text: '<img src\="" alt\="image"><br/>Definición de <b>[*]</b>\:<br/> <i>Es un
-    animal hambriento que vive en el bosque de caperucita</i><br/></br><p>Nota: Cada
-    símbolo ? representa una letra, y * a una o varias palabras.</p>'
-  :type: :short
+  :name: Leñador-21-d4filtered
+  :text: Definición de <b>Leñador</b>:<br/> <i>Con su hacha, [1] a la [2] del [3]
+    del [4].</i><br/><br/>(Coloca cada palabra en su posición correcta dentro del
+    texto)
+  :type: :match
   :feedback: ''
   :lang: :es
   :answer:
-  - lobo
-  - el lobo
+  - - '1'
+    - libera
+  - - '2'
+    - mujer
+  - - '3'
+    - malo
+  - - '4'
+    - cuento
