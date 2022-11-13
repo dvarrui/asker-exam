@@ -1,4 +1,3 @@
-require "rainbow"
 require_relative 'application'
 require_relative 'export/exam'
 require_relative 'input/reader'
