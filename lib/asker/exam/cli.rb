@@ -9,7 +9,7 @@ class CLI < Thor
   map ["v", "-v", "--version"] => "version"
   desc "version", "show the program version"
   def version
-    puts "#{Version::NAME} (version #{Version::VERSION})"
+    puts "#{Asker::Exam::NAME} (version #{Asker::Exam::VERSION})"
   end
 
   map ["f", "-f", "--file"] => "file"
