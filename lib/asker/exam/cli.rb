@@ -1,4 +1,4 @@
-require 'thor'
+require "thor"
 require_relative '../exam'
 require_relative 'version'
 require "debug"
