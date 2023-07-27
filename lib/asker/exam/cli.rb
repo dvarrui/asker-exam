@@ -1,7 +1,6 @@
 require "thor"
 require_relative "../exam"
 require_relative "version"
-require "debug"
 
 class CLI < Thor
   map ["h", "-h", "--help"] => "help"
