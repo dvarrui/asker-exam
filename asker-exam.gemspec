@@ -13,11 +13,19 @@ Gem::Specification.new do |s|
   s.email       = 'teuton.software@protonmail.com'
   s.homepage    = 'https://github.com/dvarrui/asker-exam'
 
-  s.executables << Version::NAME
-  s.files       = Dir.glob(File.join('lib','**','*.rb')) +
-                  Dir.glob(File.join('docs','**','*.md'))
+  s.license = "GPL-3.0"
+  s.authors = ["David Vargas Ruiz"]
+  s.email = "teuton.software@protonmail.com"
+  s.homepage = Asker::Exam::HOMEPAGE
 
-  s.add_runtime_dependency 'colorize'
-  s.add_runtime_dependency 'terminal-table'
-  s.add_runtime_dependency 'thor'
+  s.extra_rdoc_files = ["README.md", "LICENSE"]
+  s.executables << Asker::Exam::NAME
+  s.files = Dir.glob(File.join("lib", "**", "*.*"))
+
+
+  s.required_ruby_version = ">= 3.0"
+
+  s.add_runtime_dependency 'colorize', "~> 1.1"       # ruby >= 2.6.0
+  s.add_runtime_dependency "terminal-table", "~> 3.0" # ruby >= 0
+  s.add_runtime_dependency "thor", "~> 1.2"           # ruby > 2.0.0
 end

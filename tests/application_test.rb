@@ -9,7 +9,7 @@ class ApplicationTest < Minitest::Test
   def test_params
     app = Application.instance
     app.reset
-    assert_equal 'asker-exam', Version::NAME
+    assert_equal 'asker-exam', Asker::Exam::NAME
     assert_equal Hash.new, app.params
   end
 
