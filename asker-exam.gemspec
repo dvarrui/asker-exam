@@ -1,17 +1,13 @@
 require_relative 'lib/asker/exam/version'
 
 Gem::Specification.new do |s|
-  s.name        = Version::GEMNAME
-  s.version     = Version::VERSION
-  s.summary     = "Create quizzes from asker-tool output (YAML)"
+  s.name = Asker::Exam::GEMNAME
+  s.version = Asker::Exam::VERSION
+  s.date = Time.now.strftime("%Y-%m-%d")
+  s.summary = "Create exams from asker-tool questions (YAML file)"
   s.description = <<-EOF
-  Create quizzes from questions Asker YAML input file
+  Create exams with questions from Asker YAML output file
   EOF
-
-  s.license     = 'GPL-3.0'
-  s.authors     = ['David Vargas Ruiz']
-  s.email       = 'teuton.software@protonmail.com'
-  s.homepage    = 'https://github.com/dvarrui/asker-exam'
 
   s.license = "GPL-3.0"
   s.authors = ["David Vargas Ruiz"]
@@ -21,7 +17,6 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ["README.md", "LICENSE"]
   s.executables << Asker::Exam::NAME
   s.files = Dir.glob(File.join("lib", "**", "*.*"))
-
 
   s.required_ruby_version = ">= 3.0"
 
