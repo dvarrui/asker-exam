@@ -1,16 +1,17 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
-require 'minitest/autorun'
-require_relative '../lib/asker/exam/application'
-require_relative '../lib/asker/exam/version'
+require "minitest/autorun"
+require_relative "../lib/asker/exam/application"
+require_relative "../lib/asker/exam/version"
 
 # Test Application singleton
 class ApplicationTest < Minitest::Test
   def test_params
     app = Application.instance
     app.reset
-    assert_equal 'asker-exam', Asker::Exam::NAME
-    assert_equal Hash.new, app.params
+    assert_equal "asker-exam", Asker::Exam::NAME
+    cond = app.params == {}
+    assert_equal true, cond
   end
 
   def test_get
@@ -23,11 +24,11 @@ class ApplicationTest < Minitest::Test
     assert_nil app.get(:filepath)
     assert_nil app.get(:projectname)
 
-    inputs = { required_exams: 1, required_qxe: 50, projectname: 'foo' }
+    inputs = {required_exams: 1, required_qxe: 50, projectname: "foo"}
     app.params.merge! inputs
     assert_equal 1, app.get(:required_exams)
     assert_equal 50, app.get(:required_qxe)
-    assert_equal 'foo', app.get(:projectname)
+    assert_equal "foo", app.get(:projectname)
 
     app.reset
     assert_equal 3, app.get(:required_exams)

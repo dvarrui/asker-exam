@@ -1,6 +1,5 @@
-
-require_relative 'md_exporter'
-require_relative 'txt_exporter'
+require_relative "md_exporter"
+require_relative "txt_exporter"
 
 module ExportExam
   ##

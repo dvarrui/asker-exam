@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
-require 'minitest/autorun'
-require_relative '../lib/asker/exam/create'
+require "minitest/autorun"
+require_relative "../lib/asker/exam/create"
 
 # Test Application singleton
 class CreateTest < Minitest::Test
@@ -9,9 +9,9 @@ class CreateTest < Minitest::Test
     app = Application.instance
     app.reset
 
-    filepath = 'foo.yaml'
-    options = { op1: 'op1', op2: 'op2'}
-    params = { param1: 'param1', param2: 'param2'}
+    filepath = "foo.yaml"
+    options = {op1: "op1", op2: "op2"}
+    params = {param1: "param1", param2: "param2"}
     Create.process_input_params(filepath, options, params)
     assert_equal filepath, app.get(:filepath)
     assert_equal options[:op1], app.get(:op1)

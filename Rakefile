@@ -1,51 +1,36 @@
-# frozen_string_literal: true
+# File: Rakefile
 
-desc 'Default action => check'
-task default: :check do
+require "bundler/gem_tasks"
+require "rake/testtask"
+
+Rake::TestTask.new(:test) do |t|
+  t.libs << "test"
+  t.libs << "lib"
+  t.test_files = FileList["test/**/*_test.rb"]
 end
 
-desc 'Show rake help'
+require "standard/rake"
+task default: %i[test standard]
+# task default: %i[test]
+
+desc "Default: run tests"
+task :default do
+  Rake::Task["test"].invoke
+end
+
+desc "Show rake help"
 task :help do
-  system('rake -T')
+  system("rake -T")
 end
 
-desc 'Build gem'
-task :build do
-  puts "[ INFO ] Building gem..."
-  system('rm asker-exam-*.*.*.gem')
-  system('gem build asker-exam.gemspec')
-  puts "[ INFO ] Done"
-end
-
-desc 'Delete output files'
+desc "Delete output files"
 task :clean do
-  OUTPUTDIR = 'output'
-  FileUtils.rm_r OUTPUTDIR
-  FileUtils.mkdir OUTPUTDIR
+  system("rm output/*")
 end
 
-desc 'Check project files'
-task :check do
-  testfile = File.join('.', 'tests', 'all.rb')
-  a = File.read(testfile).split("\n")
-  b = a.select { |i| i.include? '_test' }
-
-  d = File.join('.', 'tests', '**', '*_test.rb')
-  e = Dir.glob(d)
-
-  if b.size == e.size
-    puts "[ OK ] All ruby tests executed by #{testfile}"
-  else
-    puts "[FAIL] Some ruby tests are not executed by #{testfile}"
-  end
-
-  puts "[INFO] Running #{testfile}"
-  system(testfile)
-end
-
-desc 'Create launcher'
+desc "Create launcher"
 task :create_link do
-  puts '[INFO] Creating symbolic link into /usr/local/bin'
+  puts "[INFO] Creating symbolic link into /usr/local/bin"
   basedir = File.dirname(__FILE__)
   system("sudo ln -s #{basedir}/asker-exam /usr/local/bin/asker-exam")
 end

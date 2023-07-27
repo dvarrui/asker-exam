@@ -1,11 +1,11 @@
-require 'set'
+require "set"
 
 # Define Question class
 class Question
   attr_accessor :name, :comment, :text
   attr_accessor :good, :bads, :matching, :shorts
   attr_accessor :feedback
-  attr_reader   :type
+  attr_reader :type
   attr_accessor :tags
 
   def initialize(type = :choice)
@@ -13,11 +13,11 @@ class Question
   end
 
   def reset(type = :choice)
-    @name = ''
-    @comment = ''
-    @text = ''
+    @name = ""
+    @comment = ""
+    @text = ""
     @type = type
-    @good = ''
+    @good = ""
     @bads = []
     @matching = []
     @shorts = []

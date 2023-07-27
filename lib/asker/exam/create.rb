@@ -1,6 +1,6 @@
-require_relative 'application'
-require_relative 'export/exam'
-require_relative 'input/reader'
+require_relative "application"
+require_relative "export/exam"
+require_relative "input/reader"
 
 module Create
   def self.call(filepath, options = {})
@@ -34,8 +34,8 @@ module Create
     app.params[:questions_count] = questions.count
     questions_used_number = app.get(:required_exams).to_i * app.get(:required_qxe).to_i
     app.params[:questions_used_number] = questions_used_number
-    indexes = (0..(questions.count-1)).to_a.shuffle!
-    while indexes.count < questions_used_number do
+    indexes = (0..(questions.count - 1)).to_a.shuffle!
+    while indexes.count < questions_used_number
       indexes << (0..questions.count).to_a.shuffle!
     end
     indexes.flatten!
@@ -43,8 +43,8 @@ module Create
     input
   end
 
-  def self.create_exams_with(questions, format="txt")
-    puts '==> asker-exam: Exporting files...'
+  def self.create_exams_with(questions, format = "txt")
+    puts "==> asker-exam: Exporting files..."
     app = Application.instance
     filename = app.get(:projectname)
     indexes = app.get(:selected_q_indexes)

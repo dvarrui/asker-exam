@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'singleton'
+require "singleton"
 
 # Global parameters
 class Application
@@ -13,9 +13,9 @@ class Application
   end
 
   def reset
-    @default = { required_exams: 3,
-                 required_qxe: 10,
-                 exams_format: :txt }
+    @default = {required_exams: 3,
+                required_qxe: 10,
+                exams_format: :txt}
     @params = {}
   end
 

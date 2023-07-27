@@ -1,7 +1,11 @@
-require 'yaml'
+require "yaml"
 
 module InputReader
   def self.read(filename)
-    YAML.load(File.read(filename))
+    # YAML.load(File.read(filename))
+    YAML.safe_load(
+      File.read(filepath),
+      permitted_classes: [Array, Hash, Symbol]
+    )
   end
 end

@@ -10,14 +10,14 @@ module TXTExporter
   end
 
   def self.export_exam(filename, questions)
-   f = File.open(File.join('output', filename), 'w')
-   f.write('=' * 50 + "\n")
-   f.write("Created by : #{Version::NAME}")
-   f.write(" (version #{Version::VERSION})\n")
-   f.write("File       : #{filename}\n")
-   f.write("Time       : #{Time.new}\n")
-   f.write('=' * 50 + "\n\n")
-   f.close
+    f = File.open(File.join("output", filename), "w")
+    f.write("=" * 50 + "\n")
+    f.write("Created by : #{Version::NAME}")
+    f.write(" (version #{Version::VERSION})\n")
+    f.write("File       : #{filename}\n")
+    f.write("Time       : #{Time.new}\n")
+    f.write("=" * 50 + "\n\n")
+    f.close
   end
 
   def self.export_solu(filename, questions)

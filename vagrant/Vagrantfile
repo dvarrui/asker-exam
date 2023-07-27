@@ -1,11 +1,12 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-NAME="asker-exam-debian"
+NAME = "asker-exam-debian"
+BOX = "generic/debian10"
 
 Vagrant.configure("2") do |config|
   config.vm.define NAME do |i|
-    i.vm.box = "generic/debian10"
+    i.vm.box = BOX
     i.vm.hostname = NAME
     i.vm.synced_folder "./", "/vagrant"
     i.vm.network "public_network", bridge: ["wlan0"]
