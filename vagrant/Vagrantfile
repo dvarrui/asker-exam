@@ -1,20 +1,18 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-NAME = "asker-exam-debian"
-BOX = "generic/debian10"
-
+NAME = "test-asker-exam"
+BOX = "generic/ubuntu2204"
 Vagrant.configure("2") do |config|
   config.vm.define NAME do |i|
     i.vm.box = BOX
     i.vm.hostname = NAME
     i.vm.synced_folder "./", "/vagrant"
-    i.vm.network "public_network", bridge: ["wlan0"]
-    i.vm.provision "shell", inline: <<-SHELL
-      apt update
-      apt install -y tree vim
-      apt install -y ruby irb
-    SHELL
+    #    i.vm.network "public_network", bridge: [ "eth1" ]
+
+    # i.vm.provision "shell", inline: <<-SHELL
+    #   apt install -y tree vim
+    # SHELL
     i.vm.provider "virtualbox" do |v|
       v.name = NAME
       v.memory = 2048
