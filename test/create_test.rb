@@ -9,7 +9,7 @@ class CreateTest < Test::Unit::TestCase
     filepath = "foo.yaml"
     options = {op1: "op1", op2: "op2"}
     params = {param1: "param1", param2: "param2"}
-    Create.process_input_params(filepath, options, params)
+    Create.new.process_input_params(filepath, options, params)
     assert_equal filepath, app.get(:filepath)
     assert_equal options[:op1], app.get(:op1)
     assert_equal options[:op2], app.get(:op2)

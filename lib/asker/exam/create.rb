@@ -2,22 +2,22 @@ require_relative "application"
 require_relative "export/exam"
 require_relative "input/reader"
 
-module Create
-  def self.call(filepath, options = {})
+class Create
+  def call(filepath, options = {})
     input = read_input(filepath)
     process_input_params(filepath, options, input[:params])
     show_inputs(Application.instance)
     create_exams_with(input[:questions], options["format"] || "txt")
   end
 
-  def self.process_input_params(filepath, options, params)
+  def process_input_params(filepath, options, params)
     app = Application.instance
     app.params[:filepath] = filepath
     app.params.merge!(options)
     app.params.merge!(params)
   end
 
-  def self.show_inputs(app)
+  def show_inputs(app)
     puts "==> asker-exam: Show configuration"
     puts "    Project name     : #{app.get(:projectname)}"
     puts "    Input filepath   : #{app.get(:filepath)}"
@@ -27,7 +27,7 @@ module Create
     puts "    Questions used   : #{app.get(:questions_used_number)}"
   end
 
-  def self.read_input(filepath)
+  def read_input(filepath)
     input = InputReader.read(filepath)
     questions = input[:questions]
     app = Application.instance
@@ -43,7 +43,7 @@ module Create
     input
   end
 
-  def self.create_exams_with(questions, format = "txt")
+  def create_exams_with(questions, format = "txt")
     puts "==> asker-exam: Exporting files..."
     app = Application.instance
     filename = app.get(:projectname)

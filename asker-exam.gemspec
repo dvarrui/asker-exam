@@ -22,4 +22,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "colorize", "~> 1.1"       # ruby >= 2.6.0
   s.add_runtime_dependency "terminal-table", "~> 3.0" # ruby >= 0
   s.add_runtime_dependency "thor", "~> 1.2"           # ruby > 2.0.0
+  s.add_runtime_dependency "tty-config", "~> 0.6"     # ruby > 2.0.0
 end
