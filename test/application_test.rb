@@ -1,11 +1,8 @@
-#!/usr/bin/env ruby
-
-require "minitest/autorun"
+require "test/unit"
 require_relative "../lib/asker/exam/application"
 require_relative "../lib/asker/exam/version"
 
-# Test Application singleton
-class ApplicationTest < Minitest::Test
+class ApplicationTest < Test::Unit::TestCase
   def test_params
     app = Application.instance
     app.reset

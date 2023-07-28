@@ -1,10 +1,7 @@
-#!/usr/bin/ruby
-
-require "minitest/autorun"
+require "test/unit"
 require_relative "../lib/asker/exam/create"
 
-# Test Application singleton
-class CreateTest < Minitest::Test
+class CreateTest < Test::Unit::TestCase
   def test_proces_input_params
     app = Application.instance
     app.reset
