@@ -8,10 +8,22 @@ class Settings
       File.read(filepath),
       permitted_classes: [Array, Hash, Symbol]
     )
+    @settings[:params] = {}
+    @settings[:data] = {}
   end
 
   def self.value
     @settings
+  end
+
+  def self.set(key, value)
+    @settings[:params][key] = value
+  end
+
+  def self.get(key)
+    return @settings[:params][key] if @settings[:params][key]
+
+    @settings[:default][key] || "UNKOWN"
   end
 
   load

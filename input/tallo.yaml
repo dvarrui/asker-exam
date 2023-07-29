@@ -1,7 +1,7 @@
 ---
-:params:
+:map:
   :lang: en
-  :projectname: tallo
+  :name: tallo
 :questions:
 - :comment: ''
   :name: tallo del mango-6-b1match4x4-$atributo$valor

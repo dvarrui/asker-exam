@@ -1,3 +1,6 @@
-:exams: 3
-:qxe: 10
-:format: :txt
+:default:
+  :exams: 3
+  :questions: 10
+  :format: :txt
+:params: :NODATA
+:data: :NODATA
