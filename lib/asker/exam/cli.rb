@@ -13,9 +13,17 @@ class CLI < Thor
 
   map ["f", "-f", "--file"] => "file"
   desc "file NAME", "Build exams, from Asker questions YAML file."
+  option :enumber, type: :numeric
+  option :qnumber, type: :numeric
   option :format, type: :string
   long_desc <<-LONGDESC
   Create exams, from Asker questions YAML file.
+
+    enumber : number of exams
+
+    qnumber : number of questions for each exam
+
+    format  : output format (txt, md)
   LONGDESC
 
   ##
