@@ -1,7 +1,6 @@
 ---
-:map:
-  :lang: en
-  :name: vehiculos
+:lang: en
+:projectname: vehiculos
 :questions:
 - :comment: ''
   :name: coche-1-d1choose

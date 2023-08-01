@@ -1,7 +1,6 @@
 ---
-:map:
-  :lang:
-  :name: mobiliario
+:lang:
+:projectname: mobiliario
 :questions:
 - :comment: ''
   :name: silla-1-d1choose

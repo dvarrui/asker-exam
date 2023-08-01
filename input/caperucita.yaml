@@ -1,7 +1,6 @@
 ---
-:map:
-  :lang:
-  :name: caperucita
+:lang:
+:projectname: caperucita
 :questions:
 - :comment: ''
   :name: Caperucita-1-d1choose
