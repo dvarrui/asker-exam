@@ -3,8 +3,8 @@ require_relative "exam/create"
 
 module Asker
   module Exam
-    def self.create(filename, options)
-      Create.new.call(filename, options)
+    def self.create(filename)
+      Create.new.call(filename)
     end
   end
 end

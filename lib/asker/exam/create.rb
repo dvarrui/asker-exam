@@ -1,37 +1,35 @@
-require_relative "application"
+require "yaml"
 require_relative "settings"
 require_relative "export/exam"
-require_relative "input/reader"
 
 class Create
-  def call(filepath, options = {})
+  def call(filepath)
     input = read_input(filepath)
-    process_input_params(filepath, options, input[:params])
-    show_inputs(Application.instance)
+    show_params
     create_exams_with(input[:questions], options["format"] || "txt")
   end
 
-  def process_input_params(filepath, options, params)
-    app = Application.instance
-    app.params[:filepath] = filepath
-    app.params.merge!(options)
-    app.params.merge!(params)
-  end
-
-  def show_inputs(app)
+  def show_params
     puts "==> asker-exam: Show configuration"
-    puts "    Project name     : #{app.get(:projectname)}"
+    puts "    Project name     : #{Settings.get(:projectname)}"
     puts "    Input filepath   : #{app.get(:filepath)}"
     puts "    Questions count  : #{app.get(:questions_count)}"
-    puts "    Required exams   : #{app.get(:required_exams)}"
-    puts "    Required Q x E   : #{app.get(:required_qxe)}"
+    puts "    Required exams   : #{Settings.get(:enumber)}"
+    puts "    Required Q x E   : #{Settings.get(:qnumber)}"
     puts "    Questions used   : #{app.get(:questions_used_number)}"
   end
 
   def read_input(filepath)
-    input = InputReader.read(filepath)
-    Settings.value[:data][:questions] = input
+    input = YAML.safe_load(
+      File.read(filename),
+      permitted_classes: [Array, Hash, Symbol]
+    )
     questions = input[:questions]
+
+    Settings.value[:inputfile][:filepath] = filepath
+    Settings.value[:inputfile][:lang] = input[:lang]
+    Settings.value[:inputfile][:projectname] = input[:projectname]
+
     app = Application.instance
     app.params[:questions_count] = questions.count
     questions_used_number = app.get(:required_exams).to_i * app.get(:required_qxe).to_i
@@ -45,10 +43,10 @@ class Create
     input
   end
 
-  def create_exams_with(questions, format = "txt")
+  def create_exams_with(questions)
     puts "==> asker-exam: Exporting files..."
-    app = Application.instance
-    filename = app.get(:projectname)
+    input = Settings.value[:input]
+    filename = input[:projectname]
     indexes = app.get(:selected_q_indexes)
     first = 0
     (1..app.get(:required_exams)).each do |i|

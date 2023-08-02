@@ -9,7 +9,7 @@ class Settings
       permitted_classes: [Array, Hash, Symbol]
     )
     @settings[:params] = {}
-    @settings[:data] = {}
+    @settings[:inputfile] = {}
   end
 
   def self.value

@@ -1,5 +1,4 @@
 require "thor"
-require "tty-prompt"
 require_relative "../exam"
 require_relative "version"
 
@@ -31,14 +30,8 @@ class CLI < Thor
   # Read questions from filename and creates exams.
   # @param filename [String] File path to YAML questions file.
   def build(filename)
-    puts filename
     options.each_pair { |key, value| Settings.set(key.to_sym, value) }
-    puts Settings.value
-    # prompt = TTY::Prompt.new
-    # prompt.ask("What is your name?", default: ENV["USER"])
-    # => What is your name? (piotr)
-
-    Asker::Exam.create(filename, options)
+    Asker::Exam.create(filename)
   end
 
   def method_missing(method, *_args, &_block)
