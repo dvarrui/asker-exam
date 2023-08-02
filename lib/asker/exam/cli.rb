@@ -11,13 +11,13 @@ class CLI < Thor
     puts "#{Asker::Exam::NAME} (version #{Asker::Exam::VERSION})"
   end
 
-  map ["f", "-f", "--file"] => "file"
-  desc "file NAME", "Build exams, from Asker questions YAML file."
+  map ["b", "-b", "--build"] => "build"
+  desc "build FILENAME.yaml", "Build exams, from Asker questions YAML file."
   option :enumber, type: :numeric
   option :qnumber, type: :numeric
   option :format, type: :string
   long_desc <<-LONGDESC
-  Create exams, from Asker questions YAML file.
+  Build exams, from Asker questions YAML file.
 
     enumber : number of exams
 
@@ -29,7 +29,9 @@ class CLI < Thor
   ##
   # Read questions from filename and creates exams.
   # @param filename [String] File path to YAML questions file.
-  def file(filename)
+  def build(filename)
+    puts filename
+    puts options
     Asker::Exam.create(filename, options)
   end
 
@@ -38,6 +40,10 @@ class CLI < Thor
   end
 
   def respond_to_missing?(_method_name)
+    true
+  end
+
+  def self.exit_on_failure?
     true
   end
 end

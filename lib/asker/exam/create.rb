@@ -37,7 +37,6 @@ class Create
   def read_input(filepath)
     input = InputReader.read(filepath)
     Settings.value[:data][:questions] = input
-    require "debug"; binding.break
     questions = input[:questions]
     app = Application.instance
     app.params[:questions_count] = questions.count
