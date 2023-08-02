@@ -1,6 +1,4 @@
 :default:
-  :exams: 3
-  :questions: 10
+  :enumber: 3
+  :qnumber: 10
   :format: :txt
-:params: :NODATA
-:data: :NODATA

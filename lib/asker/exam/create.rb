@@ -3,12 +3,6 @@ require_relative "settings"
 require_relative "export/exam"
 require_relative "input/reader"
 
-# TODO
-# require "tty-prompt"
-# prompt = TTY::Prompt.new
-# prompt.ask("What is your name?", default: ENV["USER"])
-# => What is your name? (piotr)
-
 class Create
   def call(filepath, options = {})
     input = read_input(filepath)
