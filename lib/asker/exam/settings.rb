@@ -2,12 +2,12 @@ require "yaml"
 
 class Settings
   def self.load
-    filepath = File.join(File.dirname(__FILE__), "settings.yaml")
     @settings = {}
-    @settings = YAML.safe_load(
-      File.read(filepath),
-      permitted_classes: [Array, Hash, Symbol]
-    )
+    @settings[:default] = {
+      enumber: 3,
+      qnumber: 10,
+      format: :txt
+    }
     @settings[:params] = {}
     @settings[:inputfile] = {}
   end
