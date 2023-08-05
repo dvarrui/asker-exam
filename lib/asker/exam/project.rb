@@ -7,7 +7,8 @@ class Project
     @project[:default] = {
       enumber: 3,
       qnumber: 10,
-      format: :txt
+      format: "txt",
+      output: "output"
     }
     @project[:params] = {}
     @project[:inputfile] = {}
@@ -31,7 +32,6 @@ class Project
     options.each_pair do |key, value|
       @project[:params][key.to_sym] = value
     end
-
   end
 
   def value

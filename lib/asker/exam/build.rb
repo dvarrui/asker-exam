@@ -3,27 +3,29 @@ require_relative "export/factory"
 class Build
   def call(project)
     project.show
-    # create_exams_with(input[:questions], options["format"] || "txt")
+    create_exams(project)
   end
 
-  def create_exams_with(questions)
-    puts "==> asker-exam: Exporting files..."
-    input = Settings.value[:input]
-    filename = input[:projectname]
-    indexes = app.get(:selected_q_indexes)
-    first = 0
-    (1..app.get(:required_exams)).each do |i|
-      selected_questions = []
-      indexes[first, app.get(:required_qxe)].each do |i|
-        index = i
-        if index >= questions.size
-          index = index % questions.size
-        end
-        selected_questions << questions[index]
+  def create_exams(project)
+    puts "==> asker-exam: Creating exams..."
+    qxe = project.get(:enumber) * project.get(:qnumber)
+    questions = project.get(:questions).clone
+    qselected = []
+    exam_id = 0
+    questions.shuffle.cycle.take(qxe).each do |question|
+      qselected << question if qselected.size < project.get(:qnumber)
+      if qselected.size == project.get(:qnumber)
+        exam_id += 1
+        export_selected_questions(project, exam_id, qselected)
+        qselected.clear
       end
-      export = ExportFactory.get(format)
-      export.call(i, filename, selected_questions)
-      first += app.get(:required_qxe)
     end
+  end
+
+  def export_selected_questions(project, id, questions)
+    filename = project.get(:projectname)
+    format = project.get(:format)
+    export = ExportFactory.get(format)
+    export.call(filename, id, questions)
   end
 end

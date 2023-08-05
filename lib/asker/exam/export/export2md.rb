@@ -3,7 +3,7 @@ class Export2md
   # Export 1 exam and his solution
   # @param filename [String] File name
   # @param questions [Array] Array of questions
-  def call(id, name, questions)
+  def call(name, id, questions)
     filename1 = format("%s-exam-%02d.md", name, id)
     filename2 = format("%s-solu-%02d.md", name, id)
     puts "    asker-exam: #{filename1}, #{filename2}"
