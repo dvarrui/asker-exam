@@ -1,30 +1,42 @@
 require "yaml"
 
-class Settings
-  def self.load
-    @settings = {}
-    @settings[:default] = {
+class Project
+  def initialize
+    @project = {}
+    @project[:default] = {
       enumber: 3,
       qnumber: 10,
       format: :txt
     }
-    @settings[:params] = {}
-    @settings[:inputfile] = {}
+    @project[:params] = {}
+    @project[:inputfile] = {}
   end
 
-  def self.value
-    @settings
+  def get(key)
+    return @project[:params][key] if @project[:params][key]
+    return @project[:inputfile][key] if @project[:inputfile][key]
+    return @project[:default][key] if @project[:default][key]
+
+    raise "[ERROR] Project: Unknown param (#{key})!"
   end
 
-  def self.set(key, value)
-    @settings[:params][key] = value
+  def load(filepath)
+    @project[:params][:filepath] = filepath
+    @project[:inputfile] = YAML.safe_load(
+     File.read(filepath),
+    permitted_classes: [Array, Hash, Symbol]
+    )
   end
 
-  def self.get(key)
-    return @settings[:params][key] if @settings[:params][key]
-
-    @settings[:default][key] || "UNKOWN"
+  def value
+    @project
   end
 
-  load
+  def show
+    puts "==> Project configuration"
+    puts "    Project name     : #{get(:projectname)}"
+    puts "    Questions count  : #{get(:questions).size}"
+    puts "    Required exams   : #{get(:enumber)}"
+    puts "    Required Q x E   : #{get(:qnumber)}"
+  end
 end

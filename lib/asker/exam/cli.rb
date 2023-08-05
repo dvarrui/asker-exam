@@ -25,13 +25,8 @@ class CLI < Thor
 
     format  : output format (txt, md)
   LONGDESC
-
-  ##
-  # Read questions from filename and creates exams.
-  # @param filename [String] File path to YAML questions file.
   def build(filename)
-    options.each_pair { |key, value| Settings.set(key.to_sym, value) }
-    Asker::Exam.create(filename)
+    Asker::Exam.build(filename, options)
   end
 
   def method_missing(method, *_args, &_block)
