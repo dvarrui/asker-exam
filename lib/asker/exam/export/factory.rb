@@ -1,18 +1,18 @@
-require_relative "md_exporter"
-require_relative "txt_exporter"
+require_relative "export2md"
+require_relative "export2txt"
 
-module ExportExam
+class ExportFactory
   ##
   # Create exam/solution file.
   # @param id [Integer] Exam ID number
   # @param filename [String] Exam file name
   # @param questions [Array] Array of questions
-  def self.call(id, name, questions, format)
+  def self.get(format)
     case format
     when "md"
-      MDExporter.call(id, name, questions)
+      Export2md.new
     when "txt"
-      TXTExporter.call(id, name, questions)
+      Export2txt.new
     else
       puts "[ERROR] Unkown output format #{format}"
       puts "        Available formats: txt, md"

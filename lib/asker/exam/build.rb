@@ -1,4 +1,4 @@
-require_relative "export/exam"
+require_relative "export/factory"
 
 class Build
   def call(project)
@@ -21,7 +21,8 @@ class Build
         end
         selected_questions << questions[index]
       end
-      ExportExam.call(i, filename, selected_questions, format)
+      export = ExportFactory.get(format)
+      export.call(i, filename, selected_questions)
       first += app.get(:required_qxe)
     end
   end

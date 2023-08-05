@@ -6,10 +6,7 @@ module Asker
   module Exam
     def self.build(filename, options)
       project = Project.new
-      project.load(filename)
-      options.each_pair do |key, value|
-        project.value[:params][key.to_sym] = value
-      end
+      project.load(filename, options)
       Build.new.call(project)
     end
   end

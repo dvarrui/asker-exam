@@ -1,11 +1,9 @@
-##
-# Export questions to filename
-module MDExporter
+class Export2md
   ##
   # Export 1 exam and his solution
   # @param filename [String] File name
   # @param questions [Array] Array of questions
-  def self.call(id, name, questions)
+  def call(id, name, questions)
     filename1 = format("%s-exam-%02d.md", name, id)
     filename2 = format("%s-solu-%02d.md", name, id)
     puts "    asker-exam: #{filename1}, #{filename2}"
@@ -13,7 +11,9 @@ module MDExporter
     export_solu(filename2, questions)
   end
 
-  def self.export_exam(filename, questions)
+  private
+
+  def export_exam(filename, questions)
     f = File.open(File.join("output", filename), "w")
     t = "```\nFilename : #{filename}\nDate     : #{Time.now}\n```\n\n"
     f.write(t)
@@ -25,7 +25,7 @@ module MDExporter
     f.close
   end
 
-  def self.formatter_qexam(question)
+  def formatter_qexam(question)
     if question.nil?
       puts "[WARN] question.nil?"
     elsif question[:type] == :choice
@@ -47,7 +47,7 @@ module MDExporter
     end
   end
 
-  def self.export_solu(filename, questions)
+  def export_solu(filename, questions)
     f = File.open(File.join("output", filename), "w")
     t = "```\nFilename : #{filename}\nDate     : #{Time.now}\n```\n\n"
     f.write(t)
@@ -59,7 +59,7 @@ module MDExporter
     f.close
   end
 
-  def self.formatter_qsolu(question)
+  def formatter_qsolu(question)
     if question.nil?
       "[WARN] question.nil?"
     elsif question[:type] == :boolean

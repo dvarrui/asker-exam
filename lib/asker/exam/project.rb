@@ -21,12 +21,17 @@ class Project
     raise "[ERROR] Project: Unknown param (#{key})!"
   end
 
-  def load(filepath)
+  def load(filepath, options)
     @project[:params][:filepath] = filepath
     @project[:inputfile] = YAML.safe_load(
       File.read(filepath),
       permitted_classes: [Array, Hash, Symbol]
     )
+
+    options.each_pair do |key, value|
+      @project[:params][key.to_sym] = value
+    end
+
   end
 
   def value
