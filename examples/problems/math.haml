@@ -1,0 +1,36 @@
+%map{ lang: 'en', context: 'arithmetic,math,problems', version: '1'}
+
+  %problem
+    %cases{ varnames: 'N1, N2' }
+      %case 3, 2
+      %case 6, 5
+      %case 7, 3
+      %case 13, 11
+    %desc Mathematical operations with integers.
+    %ask
+      %text Calculate N1 + N2
+      %answer{type: 'formula'} N1 + N2
+    %ask
+      %text Calculate N1 - N2
+      %answer{type: 'formula'} N1 - N2
+    %ask
+      %text Calculate 2*N1-3*N2
+      %answer{type: 'formula'} 2*N1-3*N2
+
+  %problem
+    %cases{ varnames: 'X' }
+      %case x
+      %case y
+      %case z
+      %case t
+    %desc First degree equations
+    %ask
+      %text Solve the equation 2X - 4 = 6
+      %step 2X -4 = 6
+      %step 2X = 6 +4
+      %step 2X = 10
+      %step X = 10 / 2
+      %step X = 5
+    %ask
+      %text Value of X in the following equation: 2X - 4 = 6
+      %answer 5

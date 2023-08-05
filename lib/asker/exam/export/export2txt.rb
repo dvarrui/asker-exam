@@ -59,15 +59,15 @@ class Export2txt
   def export_solutions(file, questions)
     questions.each_with_index do |question, index|
       file.write(format("%2d) ", index + 1))
-      if question[:type] == :match
+      if %i[match].include? question[:type]
         file.write("#{question[:type].to_s.rjust(7)}:\n")
         question[:answer].each do
-          file.write("#{_1.rjust(14)} -> #{_2}\n")
+          file.write("#{_1.rjust(14)} <-> #{_2}\n")
         end
       elsif question[:type] == :choice
         letter_index = question[:options].index question[:answer]
         letter = %w[a b c d][letter_index]
-        file.write(" choice: #{letter} = #{question[:answer]}\n")
+        file.write(" choice: #{letter} -> #{question[:answer]}\n")
       else
         file.write("#{question[:type].to_s.rjust(7)}: #{question[:answer]}\n")
       end
