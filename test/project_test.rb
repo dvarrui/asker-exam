@@ -1,28 +1,19 @@
 require "test/unit"
-require_relative "../lib/asker/exam/settings"
+require_relative "../lib/asker/exam/project"
 
-class SettingsTest < Test::Unit::TestCase
+class ProjectTest < Test::Unit::TestCase
   def test_value
-    Settings.load
-    assert_equal 3, Settings.value[:default][:enumber]
-    assert_equal 10, Settings.value[:default][:qnumber]
-    assert_equal :txt, Settings.value[:default][:format]
-    assert_equal ({}), Settings.value[:params]
+    project = Project.new
+    assert_equal 3, project.value[:default][:enumber]
+    assert_equal 10, project.value[:default][:qnumber]
+    assert_equal :txt, project.value[:default][:format]
+    assert_equal ({}), project.value[:params]
   end
 
   def test_get
-    Settings.load
-    assert_equal 3, Settings.get(:enumber)
-    assert_equal 10, Settings.get(:qnumber)
-    assert_equal :txt, Settings.get(:format)
-  end
-
-  def test_set
-    Settings.load
-    assert_equal 3, Settings.get(:enumber)
-    Settings.set(:enumber, 1)
-    assert_equal 1, Settings.get(:enumber)
-    assert_equal 3, Settings.value[:default][:enumber]
-    assert_equal 1, Settings.value[:params][:enumber]
+    project = Project.new
+    assert_equal 3, project.get(:enumber)
+    assert_equal 10, project.get(:qnumber)
+    assert_equal :txt, project.get(:format)
   end
 end

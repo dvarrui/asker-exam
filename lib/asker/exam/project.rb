@@ -24,8 +24,8 @@ class Project
   def load(filepath)
     @project[:params][:filepath] = filepath
     @project[:inputfile] = YAML.safe_load(
-     File.read(filepath),
-    permitted_classes: [Array, Hash, Symbol]
+      File.read(filepath),
+      permitted_classes: [Array, Hash, Symbol]
     )
   end
 
