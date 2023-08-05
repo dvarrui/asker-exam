@@ -1,4 +1,5 @@
 require "yaml"
+require "colorize"
 
 class Project
   def initialize
@@ -34,9 +35,17 @@ class Project
 
   def show
     puts "==> Project configuration"
-    puts "    Project name     : #{get(:projectname)}"
-    puts "    Questions count  : #{get(:questions).size}"
-    puts "    Required exams   : #{get(:enumber)}"
-    puts "    Required Q x E   : #{get(:qnumber)}"
+    puts "    projectname : #{get(:projectname)}"
+    puts "    enumber     : #{get(:enumber)}"
+    puts "    qnumber     : #{get(:qnumber)}"
+    min = get(:qnumber)
+    max = get(:enumber) * get(:qnumber)
+    if get(:questions).size <= min
+      puts "    Questions   : #{get(:questions).size}".colorize(:light_yellow)
+    elsif get(:questions).size > max
+      puts "    Questions   : #{get(:questions).size}".colorize(:green)
+    else
+      puts "    Questions   : #{get(:questions).size}".colorize(:white)
+    end
   end
 end
