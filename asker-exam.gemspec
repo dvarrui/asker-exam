@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   Create exams with questions from Asker YAML output file
   EOF
 
-  s.license = "GPL-3.0"
+  s.license = "MPL-2.0"
   s.authors = ["David Vargas Ruiz"]
   s.email = "teuton.software@protonmail.com"
   s.homepage = Asker::Exam::HOMEPAGE
